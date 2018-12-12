@@ -1,0 +1,52 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0px;
+}
+button {
+    align-items: center;
+}
+
+ul {
+    /* float: left; */
+    list-style-type:none;
+    display: inline;
+}
+section, footer {
+    padding: 3em;
+}
+
+footer {
+    bottom: 0;
+}
+
+li main {
+    display: inline;
+}
+
+header { 
+    padding: 20px;
+    margin: 0px;
+}
+
+#myFooter { 
+    padding-left: 10em;
+    /* background-color: white;  */
+}
+
+/* h4 {
+    font-family: 'Playfair Display', serif;
+} */
+
+#advertise-section{
+    text-align: center;
+}
+
+
+
+#map-address {
+    height: 500px;
+    width: 100%;
+}
+
