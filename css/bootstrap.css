@@ -3934,7 +3934,7 @@ tbody.collapse.show {
 }
 
 .navbar {
-  position: relative;
+  position: fixed;  /* edit from relative to fixed when scroll */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
