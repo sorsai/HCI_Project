@@ -7,7 +7,7 @@ html, body {
 .bg {
     /* The image used */
     background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
-    /* background-image: src("img/bg2.jpg"); */
+    /* background-image: url("bg2.jpg"); */
     /* Half height */
     height: 100%;
   
@@ -21,7 +21,7 @@ button {
     align-items: center;
 }
 
-.regiter {
+.register {
     background-color: white;
     color: black;
     border: 2px solid #555555; /* Black */
@@ -39,10 +39,6 @@ ul {
 }
 section, footer {
     padding: 3em;
-}
-
-.footer {
-    bottom: 0;
 }
 
 li main {
@@ -63,11 +59,12 @@ header {
 .footer {
     position: relative;
     left: 0;
-    bottom: 0;
+    bottom: 30%;
     width: 100%;
     background-color: #f4f4f5;
     color: white;
     text-align: center;
+    padding: 5%;
  }
 
 /* h4 {
