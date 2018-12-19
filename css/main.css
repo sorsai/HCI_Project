@@ -7,7 +7,7 @@ html, body {
 .bg {
     /* The image used */
     background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
-  
+    /* background-image: src("img/bg2.jpg"); */
     /* Half height */
     height: 100%;
   
@@ -41,7 +41,7 @@ section, footer {
     padding: 3em;
 }
 
-footer {
+.footer {
     bottom: 0;
 }
 
@@ -54,10 +54,21 @@ header {
     margin: 0px;
 }
 
-#myFooter { 
+/* #myFooter { 
     padding-left: 10em;
-    /* background-color: white;  */
-}
+    position: relative;
+    background-color: white; 
+} */
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f4f4f5;
+    color: white;
+    text-align: center;
+ }
 
 /* h4 {
     font-family: 'Playfair Display', serif;
