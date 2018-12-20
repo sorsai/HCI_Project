@@ -24,22 +24,58 @@
 </head>
 
 <body> 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">STEM PROJECT</a>
-        <div class="navbar-nav ml-auto" style="display: inline">
-                <a class="nav-item nav-link" href="findClass.html" style="float: left; padding: 10px 15px 10px 5px">Find a Class</a>
-                <a class="nav-item nav-link" href="beCoach.html" style="float: left; padding: 10px 15px 10px 5px">Be Our Coach</a>
-                <a class="nav-item nav-link" href="toysBlog.html" style="float: left; padding: 10px 15px 10px 5px">Toys and Activities</a>
-                <a class="nav-item nav-link" href="aboutUS.html" style="float: left; padding: 10px 15px 10px 5px">About Us</a>
-                <a class="nav-item nav-link" href="contactUS.html" style="float: left; padding: 10px 15px 10px 5px">Contact Us</a>
-                <button type="button" class="btn btn-outline-info">Register</button>
-                <button type="button" class="btn btn-outline-success">Login</button>
-                
-        </div>
-    </nav>  
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">STEM PROJECT</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ml-auto" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto" style="display: inline">
+                        <a class="nav-item nav-link" href="findClass.html" style="float: left; padding: 10px 15px 10px 5px">Find a Class</a>
+                        <a class="nav-item nav-link" href="beCoach.html" style="float: left; padding: 10px 15px 10px 5px">Be Our Coach</a>
+                        <a class="nav-item nav-link" href="toysBlog.html" style="float: left; padding: 10px 15px 10px 5px">Toys and Activities</a>
+                        <a class="nav-item nav-link" href="aboutUS.html" style="float: left; padding: 10px 15px 10px 5px">About Us</a>
+                        <a class="nav-item nav-link" href="contactUS.html" style="float: left; padding: 10px 15px 10px 5px">Contact Us</a>
+                        <button type="button" class="btn btn-outline-info">Register</button>
+                        <button type="button" class="btn btn-outline-success">Login</button>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="nav flex-column" style="    
+	position: fixed;    top: 50%;        transform: translateY(-50%);    right: 20px;    z-index: 1000;">
+  	<button type="button" class="btn btn-primary-outline" style="background-color:transparent" data-toggle="tooltip" data-placement="left" title="Promotion">
+  		<a href="#promoDiv">
+  			<i class="far fa-circle"></i>
+  		</a> 		
+	</button>  
+	<button type="button" class="btn btn-primary-outline" style="background-color:transparent"  data-toggle="tooltip" data-placement="left" title="Be Our Coach">
+		<a href="#coachDiv">
+  			<i class="far fa-circle"></i>
+  		</a>
+	</button>
+	<button type="button" class="btn btn-primary-outline" style="background-color:transparent"  data-toggle="tooltip" data-placement="left" title="STEM Blogs">
+  		<a href="#blogsDiv">
+  			<i class="far fa-circle"></i>
+  		</a>
+	</button>
+	<button type="button" class="btn btn-primary-outline" style="background-color:transparent"  data-toggle="tooltip" data-placement="left" title="About Us">
+		<a href="#aboutDiv">
+  			<i class="far fa-circle"></i>
+  		</a>
+	</button>
+	<button type="button" class="btn btn-primary-outline" style="background-color:transparent"  data-toggle="tooltip" data-placement="left" title="Contact Us">
+		<a href="#locationDiv">
+  			<i class="far fa-circle"></i>
+  		</a>
+	</button>
+</nav>
+
     <!-- </header>  -->
     
-    <div class="bg"></div>
+    <div class="bg">
+        <!-- <img class="bg" src="img/bg2.jpg" style="align-content: center; padding: 1em;"> -->
+    </div>
 
     <!--  Carousel -->
     <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -120,18 +156,36 @@
    
    
    <!-- Blogs Part -->
-    <section id="blog-section">
-        <h4 id="sectionfour">Blog</h2>
-            <div clas="row">
-                 <!-- <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="http://placehold.jp/24/f4f4f5/993333/150x100.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div> -->
-            </div>
-
+    <section id="blog-section" style="background-color: rgb(165, 230, 230)">
+        <h4 id="sectionfour" style="float: right; padding: 30px">Toys & Activities</h4>
+            <!-- <div clas="row"> -->
+                <!-- <div class="col-md-12"> -->
+                    <div class="card-columns" style="width:auto;">
+                            <img class="card-img-top" src="img/toy1.jpeg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                              <h4 class="card-title">Kitty Music</h4>
+                              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                              <a href="#" class="btn btn-primary">Read More...</a>
+                            </div>
+                    </div>
+                    <div class="card-columns" style="width:400px;">
+                            <img class="card-img-top" src="img/toy1.jpeg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                              <h4 class="card-title">Kitty Music</h4>
+                              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                              <a href="#" class="btn btn-primary">Read More...</a>
+                            </div>
+                    </div>
+                    <div class="card-columns" style="width:400px;">
+                            <img class="card-img-top" src="img/toy1.jpeg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                              <h4 class="card-title">Kitty Music</h4>
+                              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                              <a href="#" class="btn btn-primary">Read More...</a>
+                            </div>
+                    </div>
+                   
+                    <!-- </div> -->
             </div>
            
     </section>
@@ -143,10 +197,12 @@
         <div class="row">
             <div class="col-sm-8">
                     <h4 id="sectionfive">Company Missions</h4>
-                         
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." Loremm </p>   
             </div>
             <div class="col-md-4">
-              
+                    <div class="card" style="width:400px">
+                            <img class="card-img-top" src="img/bg2.jpg" alt="Card image" style="width:100%">
+                    </div>
 
             </div>
         </div>
