@@ -22,6 +22,7 @@ button {
     align-items: center;
 }
 
+
 .register {
     background-color: white;
     color: black;
@@ -40,6 +41,10 @@ ul {
 }
 section, footer {
     padding: 3em;
+}
+
+#advertise-section {
+  padding: 5em;
 }
 
 li main {
