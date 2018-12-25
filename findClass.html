@@ -8,6 +8,7 @@
             
                 <!-- CSS -->
                 <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+                <link rel="stylesheet" type="text/css" media="screen" href="css/class_card.css">
             
             
                 <!-- BOOTSTRAP -->
@@ -16,11 +17,16 @@
                 <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
                 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:bold" rel="stylesheet">
                 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-                    
+                <link rel="stylesheet" href="css/rangeslider.css">   
+                <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"  media="screen">
+
                
                 <!-- JS -->
                 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
                 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+                <script type="text/javascript" src="js/rangeslider.js"></script>
+                <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
             </head>
             
             <body> 
@@ -49,21 +55,34 @@
                         <div class="sidenav">
                                   <div class="form-group">
                                         <div class="mySearch">
+                                                <h5>Enter Your Location</h5>
+                                                
+                                                <!-- <label>Enter ZipCode or Location</label> -->
                                                 <input type="text" placeholder="Search.." name="search">
                                                 <button type="submit"><i class="fa fa-search"></i></button>
-                                            </div>
-                                      <label class="p1">Age</label><br>
-                                      <div class="selectsearch">
-                                        <input type="checkbox" name="age1" value="1"> 1 to 3<br>
-                                        <input type="checkbox" name="age2" value="2"> 4 to 6<br>
-                                        <input type="checkbox" name="age3" value="3"> 7 to 9<br>
-                                        <input type="checkbox" name="age4" value="4"> 10 to 12<br>
-                                        <input type="checkbox" name="age5" value="5"> 13 to 15<br>
+                                                
+                                        </div>
+                                        <hr>
+                                    <h5 style="align-content: center">Filters</h5>
+                                    <hr>
+                                        
+                                      <label class="p1">Age: </label><br>
+                                      <div class="selectsearch"  style="color: black">
+                                        <input type="range" name="age1" value="1">
+                                        <p> Year 1 to 13 </p>
                                     </div>						
                                 </div>
+                                
                                 <div class="form-group">
-                                    <label class="p1">Season</label><br>
-                                    <div class="selectsearch">
+                                    <label class="price-range">Price:</label>
+                                    <div class="selectsearch"  style="color: black">
+                                        <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
+                                      
+                                    </div>	
+                                </div>
+                                <div class="form-group">
+                                    <label class="p1">Month:</label><br>
+                                    <div class="selectsearch"  style="color: black">
                                         <input type="checkbox" name="month1" value="1"> March to May (Summer)<br>
                                         <input type="checkbox" name="month2" value="2"> June to August (Rainy)<br>
                                         <input type="checkbox" name="month3" value="3"> September to November (Mild)<br>
@@ -71,29 +90,26 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <label class="p1">Time</label><br>
-                                    <div class="selectsearch">
-                                        <input type="checkbox" name="skill1" value="30"> 30 minutes<br>
+                                    <label class="p1">Time:</label><br>
+                                    <div class="selectsearch"  style="color: black">
+                                        <input type="range" name="skill1" value="30"> 30 minutes<br>
                                         <input type="checkbox" name="skill2" value="60"> 1 hour<br>
                                         <input type="checkbox" name="skill3" value="120"> 2 hours<br>
-                                    </div>
+                                    </div><br>
                                 </div>
                                 <div>
-                                    <label class="p1">Set</label><br>
-                                    <div class="selectsearch">
+                                    <label class="p1">Type of Activities:</label><br>
+                                    <div class="selectsearch"  style="color: black">
                                         <input type="checkbox" name="set1" value="in"> Indoor<br>
                                         <input type="checkbox" name="set2" value="out"> Outdoor<br>
                                     </div>
                                 </div>
                                 <br>
-                                <div class="form-group">
-                                      <p class="p1">Price<br>
-                                      </p>
-                                  </div>
-                                <div class="form-group">
+                                
+                                <div class="form-group" >
                                       <label class="p1">Instructor</label><br>
-                                      <select class="form-control">
-                                          <option value="0">Instructor name</option>
+                                      <select class="form-control" style="color: black">
+                                        <option value="0">Instructor name</option>
                                         <option value="1">Instructor name</option>
                                         <option value="2">Instructor name</option>
                                         <option value="3" selected>Any Instructor</option>
@@ -101,7 +117,7 @@
                                 </div>
                                 <div>
                                     <label class="p1">Skills</label><br>
-                                    <div class="selectsearch">
+                                    <div class="selectsearch"  style="color: black">
                                         <input type="checkbox" name="skill1" value="communicate"> Communication<br>
                                         <input type="checkbox" name="skill2" value="creativity"> Creativity<br>
                                         <input type="checkbox" name="skill3" value="think"> Critical thinking<br>
@@ -115,16 +131,199 @@
                         </aside>
 
                     <article>
-                        <div class="container">
-                            <div class="">
-                                <h2>Find your Interesting class</h2>
+                        <div class="container-fulid">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <center><h3>Find Your Interesting Class</h3></center><br>
+                                </div>
+                            <div class="col-sm-4">
+                                <a href="#">
+                            <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 250px; overflow: hidden; border-radius: 1px;">
+                                    <img src="https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?auto=compress&cs=tinysrgb" alt="Man with backpack"    
+                                        class="d-block w-full"> 
+                                        </a>                        
+                              <div class="px-2 py-2">
+                                <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                                  Travel
+                                </p>                           
+                                <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                                  Planning your final summer trip
+                                </h1>                                                         
+                              </div>                           
+                              <a href="#0" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                                Read More
+                              </a>                                                            
                             </div>
-                        </div>
-                            
+                            </div>
+
+                            <div class="col-sm-4">
+                                <a href="#">
+                            <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 250px; overflow: hidden; border-radius: 1px;">
+                                    <img src="https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?auto=compress&cs=tinysrgb" alt="Man with backpack"    
+                                        class="d-block w-full">  
+                                </a>                       
+                              <div class="px-2 py-2">
+                                <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                                  Travel
+                                </p>                           
+                                <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                                  Planning your final summer trip
+                                </h1>                                                         
+                              </div>                           
+                              <a href="#0" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                                Read More
+                              </a>                                                            
+                            </div>
+                        </div>  
+                    
+                        <div class="col-sm-4">
+                            <a href="#">
+                                <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 250px; overflow: hidden; border-radius: 1px;">
+                                        <img src="https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?auto=compress&cs=tinysrgb" alt="Man with backpack"    
+                                            class="d-block w-full">   
+                            </a>                      
+                                  <div class="px-2 py-2">
+                                    <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                                      Travel
+                                    </p>                           
+                                    <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                                      Planning your final summer trip
+                                    </h1>                                                         
+                                  </div>                           
+                                  <a href="#0" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                                    Read More
+                                  </a>                                                            
+                                </div>
+                                </div>
+
+                            <div class="col-sm-4">
+                                <a href="#">
+                                    <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 250px; overflow: hidden; border-radius: 1px;">
+                                            <img src="https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?auto=compress&cs=tinysrgb" alt="Man with backpack"    
+                                                class="d-block w-full">  
+                                </a>                       
+                                      <div class="px-2 py-2">
+                                        <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                                          Travel
+                                        </p>                           
+                                        <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                                          Planning your final summer trip
+                                        </h1>                                                         
+                                      </div>                           
+                                      <a href="#0" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                                        Read More
+                                      </a>                                                            
+                                    </div>
+                                </div>  
                                 
-                            </div>
+                            
+                                <div class="col-sm-4">
+                                    <a href="#">
+                                        <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 250px; overflow: hidden; border-radius: 1px;">
+                                                <img src="https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?auto=compress&cs=tinysrgb" alt="Man with backpack"    
+                                                    class="d-block w-full"> 
+                                    </a>                        
+                                          <div class="px-2 py-2">
+                                            <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                                              Travel
+                                            </p>                           
+                                            <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                                              Planning your final summer trip
+                                            </h1>                                                         
+                                          </div>                           
+                                          <a href="#0" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                                            Read More
+                                          </a>                                                            
+                                        </div>
+                                    </div>  
+                                   
+
+                                    <div class="col-sm-4">
+                                        <a href="#">
+                                            <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 250px; overflow: hidden; border-radius: 1px;">
+                                                    <img src="https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?auto=compress&cs=tinysrgb" alt="Man with backpack"    
+                                                        class="d-block w-full">   
+                                        </a>                      
+                                              <div class="px-2 py-2">
+                                                <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                                                  Travel
+                                                </p>                           
+                                                <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                                                  Planning your final summer trip
+                                                </h1>                                                         
+                                              </div>                           
+                                              <a href="#0" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                                                Read More
+                                              </a>                                                            
+                                            </div>
+                                        </div>  
+
+                                        <div class="col-sm-4">
+                                            <a href="#">
+                                                <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 250px; overflow: hidden; border-radius: 1px;">
+                                                        <img src="https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?auto=compress&cs=tinysrgb" alt="Man with backpack"    
+                                                            class="d-block w-full"> 
+                                            </a>                        
+                                                  <div class="px-2 py-2">
+                                                    <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                                                      Travel
+                                                    </p>                           
+                                                    <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                                                      Planning your final summer trip
+                                                    </h1>                                                         
+                                                  </div>                           
+                                                  <a href="#0" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                                                    Read More
+                                                  </a>                                                            
+                                                </div>
+                                                </div>
+                
+                                            <div class="col-sm-4">
+                                                <a href="#">
+                                                    <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 250px; overflow: hidden; border-radius: 1px;">
+                                                            <img src="https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?auto=compress&cs=tinysrgb" alt="Man with backpack"    
+                                                                class="d-block w-full"> 
+                                                </a>                        
+                                                      <div class="px-2 py-2">
+                                                        <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                                                          Travel
+                                                        </p>                           
+                                                        <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                                                          Planning your final summer trip
+                                                        </h1>                                                         
+                                                      </div>                           
+                                                      <a href="#0" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                                                        Read More
+                                                      </a>                                                            
+                                                    </div>
+                                                </div>  
+                                                
+                                            
+                                                <div class="col-sm-4">
+                                                    <a href="#">
+                                                        <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 250px; overflow: hidden; border-radius: 1px;">
+                                                                <img src="https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?auto=compress&cs=tinysrgb" alt="Man with backpack"    
+                                                                    class="d-block w-full">  
+                                                    </a>                       
+                                                          <div class="px-2 py-2">
+                                                            <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                                                              Travel
+                                                            </p>                           
+                                                            <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                                                              Planning your final summer trip
+                                                            </h1>                                                         
+                                                          </div>                           
+                                                          <a href="#0" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                                                            Read More
+                                                          </a>                                                            
+                                                        </div>
+                                                    </div>  
                         </div>
+                                                
                     </article>
+                    
+
+                   
         </body>
 </html>
 
