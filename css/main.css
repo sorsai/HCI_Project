@@ -39,7 +39,7 @@ ul {
     list-style-type:none;
     display: inline;
 }
-section, footer {
+section{
     padding: 3em;
 }
 
