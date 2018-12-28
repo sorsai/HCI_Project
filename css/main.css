@@ -41,7 +41,12 @@ ul {
 }
 section{
     padding: 3em;
+    align-content: center;
     
+}
+#video-coach {
+  align-content: center;
+  text-align: center;
 }
 
 #advertise-section {
