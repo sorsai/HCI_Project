@@ -40,7 +40,7 @@
             
             <body> 
                        
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-black">
                 <a class="navbar-brand" href="index.html">STEM PROJECT</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -61,13 +61,13 @@
                 <!-- </header>  -->
                 <aside  style="padding-top: 30px" >
                    
-                        <div class="sidenav">
+                        <div class="sidenav" style="background-color: #f4f4f5; padding: 0.5em;">
                                   <div class="form-group" >
                                         <div class="mySearch">
                                                 <h5>Enter Your Location</h5>
                                                 
                                                 <!-- <label>Enter ZipCode or Location</label> -->
-                                                <input type="text" placeholder="Search.." name="search" id="myInput">  
+                                                <input type="text" placeholder="Search.." name="search"/>  
                                                 <!-- onKeyPress="if(this.value.length==5) return false";      >>   to maximize the entry zipcode -->
                                                 <button type="submit"><i class="fa fa-search"></i></button>
                                                 
@@ -100,10 +100,18 @@
                                 <div class="form-group">
                                     <label class="p1">Month:</label><br>
                                     <div class="selectsearch"  style="color: black">
-                                        <input type="checkbox" name="month1" value="1"> March to May (Summer)<br>
-                                        <input type="checkbox" name="month2" value="2"> June to August (Rainy)<br>
-                                        <input type="checkbox" name="month3" value="3"> September to November (Mild)<br>
-                                        <input type="checkbox" name="month4" value="4"> December to February (Winter)<br>
+                                        <input type="checkbox" name="month1" value="1"> January<br>
+                                        <input type="checkbox" name="month2" value="2"> February<br>
+                                        <input type="checkbox" name="month3" value="3"> March<br>
+                                        <input type="checkbox" name="month4" value="4"> April<br>
+                                        <input type="checkbox" name="month5" value="5"> May<br>
+                                        <input type="checkbox" name="month6" value="6"> June<br>
+                                        <input type="checkbox" name="month7" value="7"> July<br>
+                                        <input type="checkbox" name="month8" value="8"> August<br>
+                                        <input type="checkbox" name="month9" value="9"> September<br>
+                                        <input type="checkbox" name="month10" value="10"> October<br>
+                                        <input type="checkbox" name="month11" value="11"> November<br>
+                                        <input type="checkbox" name="month12" value="12"> December<br>
                                     </div>
                                 </div>
                                 <div>
@@ -123,7 +131,7 @@
                                 </div>
                                 <br>
                                 
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                       <label class="p1">Instructor</label><br>
                                       <select class="form-control" style="color: black">
                                         <option value="0">Instructor name</option>
@@ -131,7 +139,7 @@
                                         <option value="2">Instructor name</option>
                                         <option value="3" selected>Any Instructor</option>
                                     </select>
-                                </div>
+                                </div> -->
                                 <div>
                                     <label class="p1">Skills</label><br>
                                     <div class="selectsearch"  style="color: black">
@@ -148,20 +156,19 @@
                         </aside>
 
                     <article>
-                        <div class="container-fulid">
+                        <div class="container-fulid" style="text-decoration: none;">
                             <div class="row">
                                 <div class="col-sm-12">
                                     <center><h3>Find Your Interesting Class</h3></center><br>
                                 </div>
                                
                             <div class="col-sm-4">
-                                <a href="#">
+                                <a href="classinfo.html">
                             <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 250px; overflow: hidden; border-radius: 1px;">
                                     <img src="https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?auto=compress&cs=tinysrgb" alt="Man with backpack"    
                                         class="d-block w-full"> 
-                                        </a>  
-                                               
-                              <div class="px-2 py-2">
+                            </a>
+                             <div class="px-2 py-2">
                                 
                                 <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
                                   Categories
@@ -169,33 +176,22 @@
                                 <h2 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
                                   Summer Camp
                                 </h2> 
-                              </div>                                                     
-                              
-
-                   
+                              </div>
                               <div class="px-2 py-2">
-                             
-                              <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                    Coach: Atha
-                                  </p>   
-
-                                  <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                       Date: 12 May 2019
-                                      </p> 
-                                      <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                            Time: 6 a.m.
-                                           </p> 
                                       <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px" id="myElement">
                                            Location: Samutprakan
-                                           </p> 
-                              </div>
-                            
-                                                      
-                              <a href="#" class=" d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-                               More Info...
+                                           </p>
+                                           <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                Started FEE: 2,000 BAHT
+                                                </p> 
+                              </div> 
+                                              
+                              <a href="classinfo.html" class=" d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                               More Details...
                               </a>                                                            
                             </div>
                             </div>
+                        
 
                             <div class="col-sm-4" >
                                 <a href="#">
@@ -211,24 +207,16 @@
                                   Huahin Camp
                                 </h1>
                                 <div class="px-2 py-2">
-                             
-                              <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                    Coach: Dada
-                                  </p>   
-
-                                  <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                       Date: 12 May 2019
-                                      </p> 
-                                      <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                            Time: 6 a.m.
-                                           </p> 
-                                      <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px" id="myElement">
+                                <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px" id="myElement">
                                            Location: Samutprakan
-                                           </p> 
+                                           </p>
+                                           <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                Started FEE: 2,000 BAHT
+                                                </p> 
                               </div>                                                         
                               </div>                           
                               <a href="#" class=" d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-                                    More Info...
+                                    More Details...
                                    </a>                                                             
                             </div>
                         </div>  
@@ -247,24 +235,16 @@
                                   Huahin Camp
                                 </h1>
                                 <div class="px-2 py-2">
-                             
-                              <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                    Coach: Martha
-                                  </p>   
-
-                                  <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                       Date: 12 May 2019
-                                      </p> 
-                                      <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                            Time: 6 a.m.
-                                           </p> 
-                                      <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
-                                           Location: Samutprakan
-                                           </p> 
+                                <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                Location: Samutprakan
+                                </p> 
+                                <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                Started FEE: 2,000 BAHT
+                                </p> 
                                 </div>                                            
                                   </div>                           
                                   <a href="#" class=" d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-                                        More Info...
+                                        More Details...
                                        </a>                                                             
                                 </div>
                             </div>
@@ -284,24 +264,16 @@
                                       Huahin Camp
                                     </h1>
                                     <div class="px-2 py-2">
-                                 
-                                  <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                        Coach: Nerva
-                                      </p>   
-    
-                                      <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                           Date: 12 May 2019
-                                          </p> 
-                                          <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                                Time: 6 a.m.
-                                               </p> 
                                           <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement" >
                                                Location: Samutprakan
-                                               </p> 
+                                               </p>
+                                               <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                    Started FEE: 2,000 BAHT
+                                                    </p> 
                                   </div>       
                                 </div>                          
                                       <a href="#" class=" d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-                                            More Info...
+                                            More Details...
                                            </a>                                                           
                                     </div>
                                 </div>  
@@ -321,24 +293,16 @@
                                           Huahin Camp
                                         </h1>
                                         <div class="px-2 py-2">
-                                     
-                                      <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                            Coach: Atha
-                                          </p>   
-        
-                                          <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                               Date: 12 May 2019
-                                              </p> 
-                                              <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                                    Time: 6 a.m.
-                                                   </p> 
                                               <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
                                                    Location: Samutprakan
-                                                   </p> 
+                                                   </p>
+                                                   <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                        Started FEE: 2,000 BAHT
+                                                        </p> 
                                       </div>                                                                
                                           </div>                           
                                           <a href="#" class=" d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-                                                More Info...
+                                                More Details...
                                                </a>                                                              
                                         </div>
                                     </div>  
@@ -358,24 +322,16 @@
                                               Huahin Camp
                                             </h1>
                                             <div class="px-2 py-2">
-                                         
-                                          <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                                Coach: Nara
-                                              </p>   
-            
-                                              <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                                   Date: 12 May 2019
-                                                  </p> 
-                                                  <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                                        Time: 6 a.m.
-                                                       </p> 
                                                   <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
                                                        Location: Samutprakan
                                                        </p> 
+                                                       <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                            Started FEE: 2,000 BAHT
+                                                            </p>
                                           </div>                                                                
                                               </div>                           
                                               <a href="#" class=" d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-                                                    More Info...
+                                                    More Details...
                                                    </a>                                                            
                                             </div>
                                         </div>  
@@ -394,24 +350,16 @@
                                                   Huahin Camp
                                                 </h1>
                                                 <div class="px-2 py-2">
-                                             
-                                              <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                                    Coach: Chirs
-                                                  </p>   
-                
-                                                  <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                                       Date: 12 May 2019
-                                                      </p> 
-                                                      <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                                            Time: 6 a.m.
-                                                           </p> 
                                                       <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
                                                            Location: Samutprakan
-                                                           </p> 
+                                                           </p>
+                                                           <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                                Started FEE: 2,000 BAHT
+                                                                </p> 
                                               </div>                                                            
                                                   </div>                           
                                                   <a href="#" class=" d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-                                                        More Info...
+                                                        More Details...
                                                        </a>                                                             
                                                 </div>
                                                 </div>
@@ -430,24 +378,16 @@
                                                       Huahin Camp
                                                     </h1>
                                                     <div class="px-2 py-2">
-                                                 
-                                                  <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                                        Coach: Budda
-                                                      </p>   
-                    
-                                                      <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                                           Date: 12 May 2019
-                                                          </p> 
-                                                          <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                                                Time: 6 a.m.
-                                                               </p> 
                                                           <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
                                                                Location: Samutprakan
-                                                               </p> 
+                                                               </p>
+                                                               <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                                    Started FEE: 2,000 BAHT
+                                                                    </p> 
                                                   </div>                                                               
                                                       </div>                           
                                                       <a href="#" class=" d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-                                                            More Info...
+                                                            More Details...
                                                            </a>                                                              
                                                     </div>
                                                 </div>  
@@ -467,24 +407,16 @@
                                                           Huahin Camp
                                                         </h1>
                                                         <div class="px-2 py-2">
-                                                     
-                                                      <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                                            Coach: Atha
-                                                          </p>   
-                        
-                                                          <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                                               Date: 12 May 2019
-                                                              </p> 
-                                                              <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-                                                                    Time: 6 a.m.
-                                                                   </p> 
                                                               <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
                                                                    Location: Bangkok
-                                                                   </p> 
+                                                                   </p>
+                                                                   <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                                        Started FEE: 2,000 BAHT
+                                                                        </p> 
                                                       </div>                                                                
                                                           </div>                           
                                                           <a href="#" class=" d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-                                                                More Info...
+                                                                More Details...
                                                                </a>                                                              
                                                         </div>
 
@@ -495,73 +427,69 @@
                         </div>
                                                 
                     </article>
-                     <!-- Footer -->
-        <footer>
-                <div class="footer" style="background-color:#f4f4f5; padding: 0em;">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <h4 style="color: black; padding-top: 1em;">Parents</h4>
-                            <ul>
-                                <li><a href="findClass.html">Find a class</a></li>
-                                <li><a href="#">Birthday Parties/Playdate</a></li>
-                                <li><a href="#">Send Gift Cards</a></li>
-                                <li><a href="#">DIY Activity</a></li>
-                                <li><a href="#">F.A.Q</a></li>
-                                <li><a href="#login">Login</a></li>
-                                <li><a href="#signUp">Sign Up</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-4">
-                            <h4 style="color: black; padding-top: 1em;">Coach</h4>
-                            <ul>
-                                <li><a href="#">Our Coach</a></li>
-                                <li><a href="#">Become Coach</a></li>
-                                <li><a href="#">Nominate Coach</a></li>
-                                <li><a href="#">Login</a></li>
-                                <li><a href="#">Sign Up</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-4">
-                            <h4 style="color: black; padding-top: 1em;">Company</h4>
-                            <ul>
-                                <li><a href="aboutUS.html">About Us</a></li>
-                                <li><a href="#">Our Approach</a></li>
-                                <li><a href="aboutUS.html">Team</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="contactUS.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                                    
-                        <div class="col-md-12">
-                             <!-- Facebook -->
-                             <a class="fb-ic">
-                                    <i class="fa fa-facebook fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
-                                  </a>
-                                  <!-- Twitter -->
-                                  <a class="tw-ic">
-                                    <i class="fa fa-twitter fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
-                                  </a>
-                                  <!-- Google +-->
-                                  <a class="gplus-ic">
-                                    <i class="fa fa-google-plus fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
-                                  </a>
-                                  <!--Linkedin -->
-                                  <a class="li-ic">
-                                    <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                                  </a>
-                                  <!--Instagram-->
-                                  <a class="ins-ic">
-                                    <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                                  </a>
-                                  <!--Pinterest-->
-                                  <a class="pin-ic">
-                                    <i class="fa fa-pinterest fa-lg white-text fa-2x"> </i>
-                                  </a>
-                        </div>
-                    </div>
-                </div>
-                </footer>
+         <!-- Footer -->
+         <footer>
+                <div class="footer" style="background-color:#f4f4f5; padding: 2em;">
+        <div class="row">
+            <div class="col-sm-4">
+                <h4 style="color: black; padding-top: 1em;">Parents</h4>
+                <ul>
+                    <li><a href="findClass.html">Find a class</a></li>
+                    <li><a href="#">Birthday Parties/Playdate</a></li>
+                    <li><a href="#">Send Gift Cards</a></li>
+                    <li><a href="#">DIY Activity</a></li>
+                    <li><a href="#">F.A.Q</a></li>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#signUp">Sign Up</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h4 style="color: black; padding-top: 1em;">Coach</h4>
+                <ul>
+                    <li><a href="#">Our Coach</a></li>
+                    <li><a href="#">Become Coach</a></li>
+                    <li><a href="#">Nominate Coach</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h4 style="color: black; padding-top: 1em;">Company</h4>
+                <ul>
+                    <li><a href="aboutUS.html">About Us</a></li>
+                    <li><a href="#">Our Approach</a></li>
+                    <li><a href="aboutUS.html">Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contactUS.html">Contact Us</a></li>
+                </ul>
+            </div><br><br>
+                        
+            <div class="col-md-12">
+                 <!-- Facebook -->
+                 <a class="fb-ic" href="#">
+                        <i class="fa fa-facebook fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
+                      </a>
+                      <!-- Twitter -->
+                      <a class="tw-ic" href="#">
+                        <i class="fa fa-twitter fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
+                      </a>
+                      <!-- Google +-->
+                      <a class="gplus-ic" href="#">
+                        <i class="fa fa-google-plus fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
+                      </a>
+                      <!--Linkedin -->
+                      <a class="li-ic" href="#">
+                        <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                      </a>
+                      <!--Instagram-->
+                      <a class="ins-ic" href="#">
+                        <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                      </a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
                 <!-- <script>
