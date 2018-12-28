@@ -67,7 +67,13 @@ header {
     position: relative;
     background-color: white; 
 } */
-
+footer a{
+  color: black;
+}
+footer a :hover{
+    color: #0056b3;
+    text-decoration: underline;
+}
 .footer {
     position: relative;
     left: 0;
@@ -77,6 +83,7 @@ header {
     color: white;
     text-align: center;
     padding: 5%;
+    
  }
 
 /* h4 {
@@ -209,3 +216,5 @@ article {
     background: #4CAF50; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
+
+
