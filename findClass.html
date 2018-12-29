@@ -27,12 +27,16 @@
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.4.2/bootstrap-slider.js"></script>
                 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
                 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-                <script type="text/javascript" src="js/rangeslider.js"></script>
+                <!-- <script type="text/javascript" src="js/rangeslider.js"></script>
                 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+                  -->
+                <link href="https://cdn.bootcss.com/noUiSlider/8.5.1/nouislider.min.css" rel="stylesheet">
+                <script src="https://cdn.bootcss.com/noUiSlider/8.5.1/nouislider.js"></script>
+
                 
             </head>
 
@@ -65,9 +69,12 @@
                                         <div class="mySearch">
                                                 <h5>Enter Your Location</h5>   
                                                 <!-- <label>Enter ZipCode or Location</label> -->
-                                                <input type="text" placeholder="Search.." name="search"/>  
+                                                <div class="form-group has-search">
+                                                        <span class="fa fa-search form-control-feedback"></span>
+                                                        <input type="text" class="form-control" placeholder="Search">
+                                                    </div> 
                                                 <!-- onKeyPress="if(this.value.length==5) return false";      >>   to maximize the entry zipcode -->
-                                                <button type="submit"><i class="fa fa-search"></i></button>
+                                                <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
                                                 
                                         </div>
                                         <hr>
@@ -77,8 +84,8 @@
                                       <label class="p1">Age: </label>
                                       
                                       <div class="selectsearch"  style="color: black">
-                                            <p> 6 to 13  years old</p>
-                                            <input type="range" name="slider-1" id="slider-1" min="6" max="12" value="9" data-popup-enabled="true">
+                                            <p> <br></p>
+                                            <div id="ageRange"></div>
                                             <!-- <input id="ex6" type="text" data-slider-min="-5" data-slider-max="20" data-slider-step="1" data-slider-value="3"/>
                                             <span id="ex6CurrentSliderValLabel">Current Slider Value: <span id="ex6SliderVal">3</span></span> -->
                                     </div>						
@@ -87,12 +94,14 @@
                                 <div class="form-group">
                                     <label class="price-range">Price:</label>
                                     <div class="selectsearch"  style="color: black">
+                                            <p> <br></p>
                                             <div data-role="rangeslider">
-                                                    <label for="range-1a">Rangeslider:</label>
-                                                    <input name="range-1a" id="range-1a" min="0" max="100" value="0" type="range" />
+                                                    <!-- <label for="range-1a">Rangeslider:</label>
+                                                <input name="range-1a" id="range-1a" min="0" max="100" value="0" type="range" />
                                                     <label for="range-1b">Rangeslider:</label>
-                                                    <input name="range-1b" id="range-1b" min="0" max="100" value="100" type="range" />
-                                                  </div>
+                                                <input name="range-1b" id="range-1b" min="0" max="100" value="100" type="range" /> -->
+                                                <div id="priceRange"></div>
+                                            </div>
                                     </div>	
                                 </div>
                                 <div class="form-group">
@@ -115,9 +124,13 @@
                                 <div>
                                     <label class="p1">Time:</label><br>
                                     <div class="selectsearch"  style="color: black">
-                                        <input type="range" name="skill1" value="30"> 30 minutes<br>
-                                        <input type="checkbox" name="skill2" value="60"> 1 hour<br>
-                                        <input type="checkbox" name="skill3" value="120"> 2 hours<br>
+                                            <!-- <p> <br></p> -->
+                                        <!-- <div id="timeRange"></div> -->
+                                        
+                                        <input type="checkbox" name="time1" value="morning"> Morning<br>
+                                        <input type="checkbox" name="time2" value="afternoon"> Afternoon<br>
+                                        <input type="checkbox" name="time3" value="evening"> Evening<br>
+                                       
                                     </div><br>
                                 </div>
                                 <div>
@@ -503,6 +516,67 @@
                         
                     -->
         </body>
+        
+<script>
+        var ageRange = document.getElementById('ageRange');
+      
+        noUiSlider.create(ageRange, {
+            start: 6, // Handle start position
+            step: 1, // Slider moves in increments of '10'
+            // margin: 1, // Handles must be more than '20' apart
+            // connect: [true, false], // Display a colored bar between the handles, // Put '0' at the bottom of the slider
+            tooltips: true,
+            orientation: 'horizontal', // Orient the slider vertically
+            // behaviour: 'tap-drag', // Move handle on tap, bar is draggable
+            range: { // Slider can select '0' to '100'
+                'min': 1,
+                'max': 13
+            },
+        });
+      
+        // When the slider value changes, update the input and span
+      
+      
+      //---------------------------------------------------------------------
+      
+      var priceRange = document.getElementById('priceRange');
+      
+        noUiSlider.create(priceRange, {
+            start: [ 20, 80 ], // Handle start position
+            step: 1, // Slider moves in increments of '10'
+            margin: 1, // Handles must be more than '20' apart
+            connect: true, // Display a colored bar between the handles, // Put '0' at the bottom of the slider
+            tooltips: true,
+            orientation: 'horizontal', // Orient the slider vertically
+            behaviour: 'tap-drag', // Move handle on tap, bar is draggable
+            range: { // Slider can select '0' to '100'
+                'min': 0,
+                'max': 100
+            },
+        });
+      
+      
+      //---------------------------------------------------------------------
+      
+      var timeRange = document.getElementById('timeRange');
+      
+        noUiSlider.create(timeRange, {
+            start: [ 8, 16 ], // Handle start position
+            step: 1, // Slider moves in increments of '10'
+            margin: 1, // Handles must be more than '20' apart
+            connect: true, // Display a colored bar between the handles, // Put '0' at the bottom of the slider
+            tooltips: true,
+            orientation: 'horizontal', // Orient the slider vertically
+            behaviour: 'tap-drag', // Move handle on tap, bar is draggable
+            range: { // Slider can select '0' to '100'
+                'min': 0,
+                'max': 24
+            },
+        });
+      
+        
+      </script>
+      
 </html>
 
    
