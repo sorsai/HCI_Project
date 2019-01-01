@@ -19,8 +19,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
    
     <!-- JS -->
+    <script type="text/javascript" src="js/customs.js"></script>
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    
 </head>
 
 <body> 
@@ -36,11 +39,14 @@
                         <a class="nav-item nav-link" href="toysBlog.html" style="float: left; padding: 10px 15px 10px 5px">Toys and Activities</a>
                         <a class="nav-item nav-link" href="aboutUS.html" style="float: left; padding: 10px 15px 10px 5px">About Us</a>
                         <a class="nav-item nav-link" href="contactUS.html" style="float: left; padding: 10px 15px 10px 5px">Contact Us</a>
-                        <button type="button" class="btn btn-outline-info">Register</button>
-                        <button type="button" class="btn btn-outline-success" id="login">Login</button>
+                        
+                        <a href="register.html"><button class="btn btn-outline-info">Register</button></a>
+                        <a href="login.html"><button type="button" class="btn btn-outline-success" id="login">Login</button></a>
                     </div>
                 </div>
             </nav>
+            
+
 
             <!-- <nav class="nav flex-column" style="    
 	position: fixed;    top: 50%;        transform: translateY(-50%);    right: 20px;    z-index: 1000;">
@@ -119,13 +125,13 @@
     <!-- Coach Part -->
             <section id="video-coach">
                 <div class="row">
-                    <div class="col-md-7" style=" font-family: 'Trebuchet MS', Helvetica, sans-serif;" >
+                    <div class="col-md-5" style=" font-family: 'Trebuchet MS', Helvetica, sans-serif; padding-top: 3em;" >
                         <!-- <div class="container"> -->
                                 <!-- style="font-family: Impact, Charcoal, sans-serif;" -->
                             <h2 id="sectionthree" >Join Us As Coach</h2><br>
                             <h4>Are You Qualified?</h4>
                             <ul>
-                            <li>Lorem ipsum dolor sit amet, consecte</li>
+                            <li>Graduation Certificate</li>
                             <li>Lorem ipsum dolor sit amet, consecte</li>
                             <li>Lorem ipsum dolor sit amet, consecte</li>
                             <li>Lorem ipsum dolor sit amet, consecte</li>
@@ -136,13 +142,13 @@
                             <a href="beCoach.html"><button type="button" class="btn btn-outline-info" >More Information</button></a>
                     </div>
 
-                    <div class="col-md-5">
-                            <!-- <div class="container"> -->
-                        <iframe width="460" height="315" position="auto" src="https://www.youtube.com/embed/RsCKj8w4CkQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                    <div class="col-md-7" style="align-content: left;">
+                            <div class="container">
+                                    <iframe width="560" height="400" src="https://www.youtube.com/embed/ap4OQKZuR8U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                            
                 </div>
-                <!-- </div> -->
+                </div>
               <!-- </div> -->
             </section>
     
@@ -254,4 +260,15 @@
         </div>
    </footer>
 </body>
+<script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
 </html>
