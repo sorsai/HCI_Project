@@ -36,7 +36,36 @@
                  
                 <link href="https://cdn.bootcss.com/noUiSlider/8.5.1/nouislider.min.css" rel="stylesheet">
                 <script src="https://cdn.bootcss.com/noUiSlider/8.5.1/nouislider.js"></script>
+            <script>
+                $(function () {
+    $("div").slice(0, 4).show();
+    $("#loadMore").on('click', function (e) {
+        e.preventDefault();
+        $("div:hidden").slice(0, 4).slideDown();
+        if ($("div:hidden").length == 0) {
+            $("#load").fadeOut('slow');
+        }
+        $('html,body').animate({
+            scrollTop: $(this).offset().top
+        }, 1500);
+    });
+});
 
+$('a[href=#top]').click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 600);
+    return false;
+});
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+        $('.totop a').fadeIn();
+    } else {
+        $('.totop a').fadeOut();
+    }
+});
+</script>
                 
             </head>
 
@@ -165,7 +194,7 @@
                                 
                             </sidebar>
                         </aside>
-
+<!-- card display -->
                     <article>
                         <div class="container-fulid" style="text-decoration: none;">
                             <div class="row">
@@ -434,9 +463,282 @@
                                           
                                 </div>  
                                 <div class="space"></div>
-                                <button type="button" class="btn btn-outline-success btn-block" > More Class </button> 
-                        </div>
+
+                                
+                                <!-- <button type="button" class="btn btn-outline-success btn-block" > More Class </button>  -->
+                        <!-- </div> -->
+
+                <div class="more">
+                    <div class="row" >          
+                        <div class="col-sm-4">
+                                <a href="classinfo.html">
+                            <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 250px; overflow: hidden; border-radius: 1px;">
+                                    <img src="https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?auto=compress&cs=tinysrgb" alt="Man with backpack"    
+                                        class="d-block w-full"> 
+                            </a>
+                             <div class="px-2 py-2">
+                                
+                                <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                                  Categories
+                                </p>                           
+                                <h2 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                                  Summer Camp
+                                </h2> 
+                              </div>
+                              <div class="px-2 py-2">
+                                      <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px" id="myElement">
+                                           Location: Samutprakan
+                                           </p>
+                                           <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                Started FEE: 2,000 BAHT
+                                                </p> 
+                              </div> 
+                                              
+                              <a href="classinfo.html" class=" d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                               More Details...
+                              </a>                                                            
+                            </div>
+                            </div>
+                        
+
+                            <div class="col-sm-4" >
+                                <a href="#">
+                            <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 250px; overflow: hidden; border-radius: 1px;">
+                                    <img src="img/1.jpg" alt="Man with backpack"    
+                                        class="d-block w-full">  
+                                </a>                       
+                              <div class="px-2 py-2">
+                                    <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                                            Categories
+                                          </p>                          
+                                <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                                  Huahin Camp
+                                </h1>
+                                <div class="px-2 py-2">
+                                <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px" id="myElement">
+                                           Location: Samutprakan
+                                           </p>
+                                           <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                Started FEE: 2,000 BAHT
+                                                </p> 
+                              </div>                                                         
+                              </div>                           
+                              <a href="#" class=" d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                                    More Details...
+                                   </a>                                                             
+                            </div>
+                        </div>  
+                    
+                        <div class="col-sm-4">
+                            <a href="#">
+                                <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 250px; overflow: hidden; border-radius: 1px;">
+                                        <img src="img/1.jpg" alt="Man with backpack" 
+                                            class="d-block w-full">   
+                            </a>                      
+                            <div class="px-2 py-2">
+                                    <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                                            Categories
+                                          </p>                          
+                                <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                                  Huahin Camp
+                                </h1>
+                                <div class="px-2 py-2">
+                                <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                Location: Samutprakan
+                                </p> 
+                                <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                Started FEE: 2,000 BAHT
+                                </p> 
+                                </div>                                            
+                                  </div>                           
+                                  <a href="#" class=" d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                                        More Details...
+                                       </a>                                                             
+                                </div>
+                            </div>
+                            
+
+                            <div class="col-sm-4">
+                                <a href="#">
+                                    <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 250px; overflow: hidden; border-radius: 1px;">
+                                            <img src="https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?auto=compress&cs=tinysrgb" alt="Man with backpack"    
+                                                class="d-block w-full">  
+                                </a>                       
+                                <div class="px-2 py-2">
+                                        <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                                                Categories
+                                              </p>                          
+                                    <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                                      Huahin Camp
+                                    </h1>
+                                    <div class="px-2 py-2">
+                                          <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement" >
+                                               Location: Samutprakan
+                                               </p>
+                                               <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                    Started FEE: 2,000 BAHT
+                                                    </p> 
+                                  </div>       
+                                </div>                          
+                                      <a href="#" class=" d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                                            More Details...
+                                           </a>                                                           
+                                    </div>
+                                </div>  
+                                
+                            
+                                <div class="col-sm-4">
+                                    <a href="#">
+                                        <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 250px; overflow: hidden; border-radius: 1px;">
+                                                <img src="https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?auto=compress&cs=tinysrgb" alt="Man with backpack"    
+                                                    class="d-block w-full"> 
+                                    </a>                        
+                                    <div class="px-2 py-2">
+                                            <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                                                    Categories
+                                                  </p>                          
+                                        <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                                          Huahin Camp
+                                        </h1>
+                                        <div class="px-2 py-2">
+                                              <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                   Location: Samutprakan
+                                                   </p>
+                                                   <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                        Started FEE: 2,000 BAHT
+                                                        </p> 
+                                      </div>                                                                
+                                          </div>                           
+                                          <a href="#" class=" d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                                                More Details...
+                                               </a>                                                              
+                                        </div>
+                                    </div>  
+                                   
+
+                                    <div class="col-sm-4">
+                                        <a href="#">
+                                            <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 250px; overflow: hidden; border-radius: 1px;">
+                                                    <img src="https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?auto=compress&cs=tinysrgb" alt="Man with backpack"    
+                                                        class="d-block w-full">   
+                                        </a>                      
+                                        <div class="px-2 py-2">
+                                                <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                                                        Categories
+                                                      </p>                          
+                                            <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                                              Huahin Camp
+                                            </h1>
+                                            <div class="px-2 py-2">
+                                                  <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                       Location: Samutprakan
+                                                       </p> 
+                                                       <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                            Started FEE: 2,000 BAHT
+                                                            </p>
+                                          </div>                                                                
+                                              </div>                           
+                                              <a href="#" class=" d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                                                    More Details...
+                                                   </a>                                                            
+                                            </div>
+                                        </div>  
+
+                                        <div class="col-sm-4">
+                                            <a href="#">
+                                                <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 250px; overflow: hidden; border-radius: 1px;">
+                                                        <img src="https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?auto=compress&cs=tinysrgb" alt="Man with backpack"    
+                                                            class="d-block w-full"> 
+                                            </a>                        
+                                            <div class="px-2 py-2">
+                                                    <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                                                            Categories
+                                                          </p>                          
+                                                <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                                                  Huahin Camp
+                                                </h1>
+                                                <div class="px-2 py-2">
+                                                      <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                           Location: Samutprakan
+                                                           </p>
+                                                           <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                                Started FEE: 2,000 BAHT
+                                                                </p> 
+                                              </div>                                                            
+                                                  </div>                           
+                                                  <a href="#" class=" d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                                                        More Details...
+                                                       </a>                                                             
+                                                </div>
+                                                </div>
+                
+                                            <div class="col-sm-4">
+                                                <a href="#">
+                                                    <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 250px; overflow: hidden; border-radius: 1px;">
+                                                            <img src="https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?auto=compress&cs=tinysrgb" alt="Man with backpack"    
+                                                                class="d-block w-full"> 
+                                                </a>                        
+                                                <div class="px-2 py-2">
+                                                        <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                                                                Categories
+                                                              </p>                          
+                                                    <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                                                      Huahin Camp
+                                                    </h1>
+                                                    <div class="px-2 py-2">
+                                                          <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                               Location: Samutprakan
+                                                               </p>
+                                                               <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                                    Started FEE: 2,000 BAHT
+                                                                    </p> 
+                                                  </div>                                                               
+                                                      </div>                           
+                                                      <a href="#" class=" d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                                                            More Details...
+                                                           </a>                                                              
+                                                    </div>
+                                                </div>  
                                                 
+                                            
+                                                <div class="col-sm-4">
+                                                    <a href="#">
+                                                        <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 250px; overflow: hidden; border-radius: 1px;">
+                                                                <img src="https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?auto=compress&cs=tinysrgb" alt="Man with backpack"    
+                                                                    class="d-block w-full">  
+                                                    </a>                       
+                                                    <div class="px-2 py-2">
+                                                            <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                                                                    Categories
+                                                                  </p>                          
+                                                        <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                                                          Huahin Camp
+                                                        </h1>
+                                                        <div class="px-2 py-2">
+                                                              <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                                   Location: Bangkok
+                                                                   </p>
+                                                                   <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px"  id="myElement">
+                                                                        Started FEE: 2,000 BAHT
+                                                                        </p> 
+                                                      </div>                                                                
+                                                          </div>                           
+                                                          <a href="#" class=" d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                                                                More Details...
+                                                               </a>                                                              
+                                                        </div>
+
+                                                    </div>
+                                </div>  
+                            </div>
+                    <div class="space"></div>
+                           
+                            
+                    <div class="col-md-12" style="align-content: center;"> 
+                       <center><button type="button" class="btn btn-outline-success" id="loadMore">Show More Classes</button></center>
+                    </div>
+                 
+                                          
                     </article>
          <!-- Footer -->
          <footer>
@@ -518,6 +820,7 @@
         </body>
         
 <script>
+    
         var ageRange = document.getElementById('ageRange');
       
         noUiSlider.create(ageRange, {
