@@ -3,6 +3,7 @@ html, body {
     height: 100%;
     padding: 0;
     margin: 0px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 .bg {
     /* The image used */
@@ -18,10 +19,15 @@ html, body {
     background-size: cover;
     background-blend-mode: darken;
   }
+
+
 button {
     align-items: center;
 }
 
+p,h1,h2,h3,h4,h5,h6,nav,button,label,footer,th,table,tr,td {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
 
 .register {
     background-color: white;
@@ -240,6 +246,22 @@ article {
   pointer-events: none;
   color: #aaa;
 }
+
+.d-block {
+  align-items: center;
+}
+
+important {
+  color: red;
+}
+
+success {
+  color: green;
+}
+.space { 
+  padding: 1em;
+}
+
 
 
 
