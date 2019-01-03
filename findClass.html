@@ -835,13 +835,13 @@
         var ageRange = document.getElementById('ageRange');
       
         noUiSlider.create(ageRange, {
-            start: 5, // Handle start position
+            start: [1, 12], // Handle start position
             step: 1, // Slider moves in increments of '10'
-            // margin: 1, // Handles must be more than '20' apart
-            // connect: [true, false], // Display a colored bar between the handles, // Put '0' at the bottom of the slider
+            margin: 1, // Handles must be more than '20' apart
+            connect: true, // Display a colored bar between the handles, // Put '0' at the bottom of the slider
             tooltips: true,
             orientation: 'horizontal', // Orient the slider vertically
-            // behaviour: 'tap-drag', // Move handle on tap, bar is draggable
+            behaviour: 'tap-drag', // Move handle on tap, bar is draggable
             range: { // Slider can select '0' to '100'
                 'min': 5,
                 'max': 13
