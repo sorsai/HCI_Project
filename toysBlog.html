@@ -17,6 +17,8 @@
                 <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
                 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:bold" rel="stylesheet">
                 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+                <link href="https://cdn.bootcss.com/noUiSlider/8.5.1/nouislider.min.css" rel="stylesheet">
+                <script src="https://cdn.bootcss.com/noUiSlider/8.5.1/nouislider.js"></script>
                 
                     
                
@@ -43,6 +45,66 @@
                     </div>
                  </div>
             </nav>
+
+            <aside  style="padding-top: 40px" >
+                    <div class="sidenav" style="background-color: #f4f4f5; padding: 1em;">
+                              <div class="form-group" >
+                                    <div class="mySearch">
+                                            <h5 style="text-align:center;">Enter Your Location</h5>   
+                                            <!-- <label>Enter ZipCode or Location</label> -->
+                                            <div class="form-group has-search">
+                                                    <span class="fa fa-search form-control-feedback"></span>
+                                                    <input type="text" class="form-control" placeholder="Search" id="classSearch">
+                                                </div> 
+                                            <!-- onKeyPress="if(this.value.length==5) return false";      >>   to maximize the entry zipcode -->
+                                            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+                                            
+                                    </div>
+                                    <hr>
+                                <h5 class="title" style="align-content: center">Filters</h5>
+                                <hr>
+                                    
+                                  <label class="p1">Age: </label>
+                                  
+                                  <div class="selectsearch"  style="color: black">
+                                        <p> <br></p>
+                                        <div id="ageRange"></div>
+                                        <!-- <input id="ex6" type="text" data-slider-min="-5" data-slider-max="20" data-slider-step="1" data-slider-value="3"/>
+                                        <span id="ex6CurrentSliderValLabel">Current Slider Value: <span id="ex6SliderVal">3</span></span> -->
+                                </div>						
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="price-range">Price:</label>
+                                <div class="selectsearch"  style="color: black">
+                                        <p> <br></p>
+                                        <div data-role="rangeslider">
+                                                <!-- <label for="range-1a">Rangeslider:</label>
+                                            <input name="range-1a" id="range-1a" min="0" max="100" value="0" type="range" />
+                                                <label for="range-1b">Rangeslider:</label>
+                                            <input name="range-1b" id="range-1b" min="0" max="100" value="100" type="range" /> -->
+                                            <div id="priceRange"></div>
+                                        </div>
+                                </div>	
+                            </div>
+                            
+                            <div>
+
+                            </div>
+                            <div>
+                            </div>
+                            <br>
+                                <label class="p1">Skills</label><br>
+                                <div class="selectsearch"  style="color: black">
+                                    <input type="checkbox" name="skill1" value="communicate"> Communication<br>
+                                    <input type="checkbox" name="skill2" value="creativity"> Creativity<br>
+                                    <input type="checkbox" name="skill3" value="think"> Critical thinking<br>
+                                    <input type="checkbox" name="skill4" value="focus"> Focus & Self control<br>
+                                    <input type="checkbox" name="skill5" value="solve"> Problem Solving<br>
+                                    <input type="checkbox" name="skill6" value="lifestyle"> Active Lifestyle<br>
+                                    <input type="checkbox" name="skill7" value="team"> Teamwork<br>
+                                </div>
+                    </aside>
                 <!-- </header>  -->
     <!-- Carousel -->
     <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -66,35 +128,14 @@
               <span class="sr-only">Next</span>
             </a>
     </div> -->
-    
-   <center><h1 style="margin-top: 30px;">STEM TOYS</h1></center>
-
-   
-
-   <div class="main">     
-   <div class="form-group has-search">
-        <span class="fa fa-search form-control-feedback"></span>
-        <input type="text" class="form-control" placeholder="Search">
-   </div>
-   </div>
-    <!-- filter -->
-    <!-- <div class="btn-group">
-            <button type="button" class="btn btn-primary">Apple</button>
-            <button type="button" class="btn btn-primary">Samsung</button>
-            <div class="btn-group">
-              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                 Sony
-              </button>
-            </div>
-          </div> -->
-           <!-- end filter -->
-    <div class="container" style="padding: 2em; justify-content: center; width: 100%;" >
+    <section class="container-fluid">
+   <center><h1 style="margin-top: 5px;">STEM TOYS</h1></center>
         <div class="row">
             <div class="col-md-3">
                 <a href="#">
                 <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover">
                 <div class="card">
-                <img class="card-img-top" src="img/toy1.jpeg" alt="Card image cap">
+                <img class="card-img-top" src="img/toy1.jpg" alt="Card image cap">
                 <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -108,7 +149,7 @@
                 <a href="#">
                 <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover">
                 <div class="card">
-                <img class="card-img-top" src="img/toy2.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/toy1-1.jpg" alt="Card image cap">
                 <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -122,7 +163,7 @@
                 <a href="#">
                 <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover">
                 <div class="card">
-                <img class="card-img-top" src="img/toy3.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/toy1-2.jpg" alt="Card image cap">
                 <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -146,24 +187,37 @@
                 </div>
                 </a>
             </div>
-        </div>
-    </div>
-    
     <hr class="alert-dark" style="width: 80%">
+    
+
+    <div class="col-md-12">
     <!--Monthly subscribe  -->
-        <div class="container">
         <section id="subscribe" style="background-color: #faeaab; padding: 2em; margin:2em;">
             <center><h4>Subscribe For Weekly News!!!</h4></center>
             <form class="form-inline justify-content-center ">
                    <input type="email" class="form-control" size="50" placeholder="name@example.com">
                    <button type="button pull-right" class="btn btn-danger">Subscribe</button>
                  </form>
-        </section>
-        </div>
+        </section> 
+    </div>
+    </div>
+</section>
+
+
+<article style="margin:4em;">
+
+
+
+
+</article>
+
+
+
 
      <!-- Footer -->
-     <footer>
+     <footer class="mainfooter" role="contentinfo">
             <div class="footer" style="background-color:#f4f4f5; padding: 2em;">
+                <div class="container">
     <div class="row">
         <div class="col-sm-4">
             <h4 style="color: black; padding-top: 1em;">Parents</h4>
@@ -226,6 +280,48 @@
 </footer>
 
 
-       
-        </body>
+    </body>
+
+    <script>
+    
+        var ageRange = document.getElementById('ageRange');
+      
+        noUiSlider.create(ageRange, {
+            start: [1, 12], // Handle start position
+            step: 1, // Slider moves in increments of '10'
+            margin: 1, // Handles must be more than '20' apart
+            connect: true, // Display a colored bar between the handles, // Put '0' at the bottom of the slider
+            tooltips: true,
+            orientation: 'horizontal', // Orient the slider vertically
+            behaviour: 'tap-drag', // Move handle on tap, bar is draggable
+            range: { // Slider can select '0' to '100'
+                'min': 5,
+                'max': 13
+            },
+        });
+      
+        // When the slider value changes, update the input and span
+      
+      
+      //---------------------------------------------------------------------
+      
+      var priceRange = document.getElementById('priceRange');
+      
+        noUiSlider.create(priceRange, {
+            start: [ 1000, 4000 ], // Handle start position
+            step: 100, // Slider moves in increments of '10'
+            margin: 1, // Handles must be more than '20' apart
+            connect: true, // Display a colored bar between the handles, // Put '0' at the bottom of the slider
+            tooltips: true,
+            orientation: 'horizontal', // Orient the slider vertically
+            behaviour: 'tap-drag', // Move handle on tap, bar is draggable
+            range: { // Slider can select '0' to '100'
+                'min': 0,
+                'max': 10000
+            },
+        });
+      
+      
+      //---------------------------------------------------------------------
+    </script>
 </html>
