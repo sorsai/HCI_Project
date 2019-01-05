@@ -93,8 +93,8 @@
             </nav> 
             
                 <!-- </header>  -->
-                <aside  style="padding-top: 30px" >
-                        <div class="sidenav" style="background-color: #f4f4f5; padding: 0.5em;">
+                <aside  style="padding-top: 40px" >
+                        <div class="sidenav" style="background-color: #f4f4f5; padding: 1em;">
                                   <div class="form-group" >
                                         <div class="mySearch">
                                                 <h5 style="text-align:center;">Enter Your Location</h5>   
@@ -111,7 +111,7 @@
                                     <h5 class="title" style="align-content: center">Filters</h5>
                                     <hr>
                                         
-                                      <label class="p1">Age: </label>
+                                      <label class="p1">Age </label>
                                       
                                       <div class="selectsearch"  style="color: black">
                                             <p> <br></p>
@@ -119,10 +119,10 @@
                                             <!-- <input id="ex6" type="text" data-slider-min="-5" data-slider-max="20" data-slider-step="1" data-slider-value="3"/>
                                             <span id="ex6CurrentSliderValLabel">Current Slider Value: <span id="ex6SliderVal">3</span></span> -->
                                     </div>						
-                                </div>
+                                </div><br>
                                 
                                 <div class="form-group">
-                                    <label class="price-range">Price:</label>
+                                    <label class="price-range">Price</label>
                                     <div class="selectsearch"  style="color: black">
                                             <p> <br></p>
                                             <div data-role="rangeslider">
@@ -133,10 +133,15 @@
                                                 <div id="priceRange"></div>
                                             </div>
                                     </div>	
-                                </div>
+                                </div><br>
                                 <div class="form-group">
-                                    <label class="p1">Month:</label><br>
-                                    <div class="selectsearch"  style="color: black">
+                                    <label class="p1">Month</label><br>
+                                    <div class="selectsearch" style="color:black;"><br>
+                                        <div data-role="rangeslider">
+                                            <div id="monthRange"></div>
+                                        </div>
+                                        </div>
+                                    <!-- <div class="selectsearch"  style="color: black">
                                         <input type="checkbox" name="month1" value="1"> January<br>
                                         <input type="checkbox" name="month2" value="2"> February<br>
                                         <input type="checkbox" name="month3" value="3"> March<br>
@@ -149,7 +154,7 @@
                                         <input type="checkbox" name="month10" value="10"> October<br>
                                         <input type="checkbox" name="month11" value="11"> November<br>
                                         <input type="checkbox" name="month12" value="12"> December<br>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div>
                                     <label class="p1">Time:</label><br>
@@ -172,7 +177,7 @@
                                 </div>
                                 <br>
                                 
-                                <!-- <div class="form-group">
+                                <div class="form-group">
                                       <label class="p1">Instructor</label><br>
                                       <select class="form-control" style="color: black">
                                         <option value="0">Instructor name</option>
@@ -180,7 +185,7 @@
                                         <option value="2">Instructor name</option>
                                         <option value="3" selected>Any Instructor</option>
                                     </select>
-                                </div> -->
+                                </div>
                                     <label class="p1">Skills</label><br>
                                     <div class="selectsearch"  style="color: black">
                                         <input type="checkbox" name="skill1" value="communicate"> Communication<br>
@@ -195,6 +200,7 @@
                             </sidebar>
                         </aside>
 <!-- card display -->
+                    <!-- receommended class -->
                     <article>
                         <div class="container-fulid" style="text-decoration: none;">
                             <div class="row" id="card">
@@ -864,29 +870,35 @@
             orientation: 'horizontal', // Orient the slider vertically
             behaviour: 'tap-drag', // Move handle on tap, bar is draggable
             range: { // Slider can select '0' to '100'
-                'min': 0,
-                'max': 10000
+                'min': 0.,
+                'max': 10000.
             },
         });
       
       
       //---------------------------------------------------------------------
       
-      var timeRange = document.getElementById('timeRange');
+      var monthRange = document.getElementById('monthRange');
       
-        noUiSlider.create(timeRange, {
-            start: [ 8, 16 ], // Handle start position
+        noUiSlider.create(monthRange, {
+
+            start: [ 8, 12 ], // Handle start position
             step: 1, // Slider moves in increments of '10'
             margin: 1, // Handles must be more than '20' apart
             connect: true, // Display a colored bar between the handles, // Put '0' at the bottom of the slider
             tooltips: true,
             orientation: 'horizontal', // Orient the slider vertically
             behaviour: 'tap-drag', // Move handle on tap, bar is draggable
+            
             range: { // Slider can select '0' to '100'
-                'min': 0,
-                'max': 24
+                'min': 1,
+                'max': 12
             },
         });
+
+    //--------------------------------------------------------------------------
+
+    
       
         
       </script>
