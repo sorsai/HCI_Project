@@ -64,7 +64,7 @@
                                 <h5 class="title" style="align-content: center">Filters</h5>
                                 <hr>
                                     
-                                  <label class="p1">Age: </label>
+                                  <label class="p1">Age </label>
                                   
                                   <div class="selectsearch"  style="color: black">
                                         <p> <br></p>
@@ -94,7 +94,7 @@
                             <div>
                             </div>
                             <br>
-                                <label class="p1">Skills</label><br>
+                                <label class="p1">Categories</label><br>
                                 <div class="selectsearch"  style="color: black">
                                     <input type="checkbox" name="skill1" value="communicate"> Communication<br>
                                     <input type="checkbox" name="skill2" value="creativity"> Creativity<br>
@@ -135,7 +135,7 @@
                 <a href="#">
                 <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover">
                 <div class="card">
-                <img class="card-img-top" src="img/toy1.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/toy1-1.jpg" alt="Card image cap" style="min-height: 100px;">
                 <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -149,7 +149,7 @@
                 <a href="#">
                 <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover">
                 <div class="card">
-                <img class="card-img-top" src="img/toy1-1.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/toy1-1.jpg" alt="Card image cap" style="min-height: 100px;">
                 <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -163,7 +163,7 @@
                 <a href="#">
                 <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover">
                 <div class="card">
-                <img class="card-img-top" src="img/toy1-2.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/toy1-1.jpg" alt="Card image cap" style="min-height: 100%;">
                 <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -177,7 +177,7 @@
                 <a href="https://www.reuters.com/article/us-amazon-com-selfdriving/amazons-latest-gadget-a-self-driving-toy-car-for-coders-idUSKCN1NX2LQ">
                 <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover">
                 <div class="card">
-                <img class="card-img-top" src="img/toy5.jpeg" alt="Card image cap">
+                <img class="card-img-top" src="img/toy1-1.jpg" alt="Card image cap" style="min-height: 100%;">
                 <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -189,7 +189,8 @@
             </div>
     <hr class="alert-dark" style="width: 80%">
     
-
+    <article ></article>
+    
     <div class="col-md-12">
     <!--Monthly subscribe  -->
         <section id="subscribe" style="background-color: #faeaab; padding: 2em; margin:2em;">
@@ -204,12 +205,7 @@
 </section>
 
 
-<article style="margin:4em;">
 
-
-
-
-</article>
 
 
 
@@ -298,6 +294,14 @@
                 'min': 5,
                 'max': 13
             },
+            format: {
+                      to: function ( value ) {
+                        return value;
+                      },
+                      from: function ( value ) {
+                        return value.replace('.00','');
+                      }
+                    }
         });
       
         // When the slider value changes, update the input and span
@@ -319,6 +323,14 @@
                 'min': 0,
                 'max': 10000
             },
+            format: {
+                      to: function ( value ) {
+                        return value;
+                      },
+                      from: function ( value ) {
+                        return value.replace('.00','');
+                      }
+                    }
         });
       
       
