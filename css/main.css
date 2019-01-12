@@ -287,6 +287,32 @@ success {
   margin-bottom: 5px;
 }
 
+#recom h3{
+    overflow: hidden;
+    text-align: center;
+  }
+  
+ #recom  h3:before,
+ #recom h3:after {
+    background-color:   #a4dce4;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+  
+#recom h3:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  
+#recom  h3:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
 
 
 
