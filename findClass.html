@@ -97,34 +97,36 @@
                         <div class="sidenav" style="background-color: #f4f4f5; padding: 1em; font-family: 'Trebuchet MS', Helvetica, sans-serif;">
                                   <div class="form-group" >
                                         <div class="mySearch">
-                                                <h5 style="text-align:center;">Enter Your Location</h5>   
+                                                <h5 class="text-center;" style="align-content:center;">Search</h5>   
                                                 <!-- <label>Enter ZipCode or Location</label> -->
                                                 <div class="form-group has-search">
                                                         <span class="fa fa-search form-control-feedback"></span>
-                                                        <input type="text" class="form-control" placeholder="Search" id="classSearch">
-                                                    </div> 
+                                                        <input type="text" class="form-control" placeholder="" id="classSearch">
+                                                     
+                                                    <h6 class="mb-0 small font-weight-small  text-muted ">*Search by Coach,Date,location,time</h6>
+                                                </div>
                                                 <!-- onKeyPress="if(this.value.length==5) return false";      >>   to maximize the entry zipcode -->
                                                 <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
                                                 
                                         </div>
                                         <hr>
                                     <h5 class="title" style="align-content: center">Filters</h5>
-                                    <hr>
+                                    
                                         
                                       <label class="p1">Age </label>
                                       
                                       <div class="selectsearch"  style="color: black">
-                                            <p> <br></p>
+                                            <p></p>
                                             <div id="ageRange"></div>
                                             <!-- <input id="ex6" type="text" data-slider-min="-5" data-slider-max="20" data-slider-step="1" data-slider-value="3"/>
                                             <span id="ex6CurrentSliderValLabel">Current Slider Value: <span id="ex6SliderVal">3</span></span> -->
                                     </div>						
-                                </div><br>
+                                </div>
                                 
                                 <div class="form-group">
                                     <label class="price-range">Price</label>
                                     <div class="selectsearch"  style="color: black">
-                                            <p> <br></p>
+                                            <p> </p>
                                             <div data-role="rangeslider">
                                                     <!-- <label for="range-1a">Rangeslider:</label>
                                                 <input name="range-1a" id="range-1a" min="0" max="100" value="0" type="range" />
@@ -133,7 +135,7 @@
                                                 <div id="priceRange"></div>
                                             </div>
                                     </div>	
-                                </div><br>
+                                </div>
                                 <div class="form-group">
                                     <label class="p1">Month</label><br>
                                     <div class="selectsearch" style="color:black;"><br>
@@ -162,9 +164,9 @@
                                             <!-- <p> <br></p> -->
                                         <!-- <div id="timeRange"></div> -->
                                         
-                                        <input type="checkbox" name="time1" value="morning"> Morning<br>
-                                        <input type="checkbox" name="time2" value="afternoon"> Afternoon<br>
-                                        <input type="checkbox" name="time3" value="evening"> Evening<br>
+                                        <input type="checkbox" name="time1" value="morning"> Morning (8:30-12:00)<br>
+                                        <input type="checkbox" name="time2" value="afternoon"> Afternoon(12:00-16:00)<br>
+                                        <input type="checkbox" name="time3" value="evening"> Evening(16:00-20:00)<br>
                                        
                                     </div><br>
                                 </div>
@@ -176,29 +178,23 @@
                                     </div>
                                 </div>
                                 <br>
-                                
-                                <div class="form-group">
-                                      <label class="p1">Instructor</label><br>
-                                      <select class="form-control" style="color: black">
-                                        <option value="0">Instructor name</option>
-                                        <option value="1">Instructor name</option>
-                                        <option value="2">Instructor name</option>
-                                        <option value="3" selected>Any Instructor</option>
-                                    </select>
-                                </div>
+                    
                                     <label class="p1">Skills</label><br>
                                     <div class="selectsearch"  style="color: black">
-                                        <input type="checkbox" name="skill1" value="communicate"> Communication<br>
-                                        <input type="checkbox" name="skill2" value="creativity"> Creativity<br>
-                                        <input type="checkbox" name="skill3" value="think"> Critical thinking<br>
-                                        <input type="checkbox" name="skill4" value="focus"> Focus & Self control<br>
-                                        <input type="checkbox" name="skill5" value="solve"> Problem Solving<br>
-                                        <input type="checkbox" name="skill6" value="lifestyle"> Active Lifestyle<br>
-                                        <input type="checkbox" name="skill7" value="team"> Teamwork<br>
+                                        <input type="checkbox" name="skill1" value="communicate"> Statistics<br>
+                                        <input type="checkbox" name="skill2" value="creativity"> Problem-Solving<br>
+                                        <input type="checkbox" name="skill3" value="think"> Creativity<br>
+                                        <input type="checkbox" name="skill4" value="focus"> Argumentation<br>
+                                        <input type="checkbox" name="skill5" value="solve"> Intellectual Curiosity<br>
+                                        <input type="checkbox" name="skill6" value="lifestyle"> Data-Driven Decision-Making<br>
+                                        <input type="checkbox" name="skill7" value="team"> Flexibility<br>
                                     </div>
                                 
                             </sidebar>
                         </aside>
+
+                     
+
 <!-- card display -->
                     <!-- class -->
                     <article>
@@ -890,19 +886,16 @@
 
                                                     </div>
                                 </div>  
-                            </div>
-                    <div class="space"></div>
-                           
-                            
+                            </div>                            
                     <div class="col-md-12" style="align-content: center;"> 
                        <center><button type="button" class="btn btn-outline-success" id="loadMore"><i class="fas fa-arrow-down"></i> Show More Classes <i class="fas fa-arrow-down"></i></button></center>
                     </div>
-                 
-                                          
-                    </article>
+        </article>
+
+                
          <!-- Footer -->
          <footer>
-                <div class="footer" style="background-color:#f4f4f5; padding: 2em;">
+        <div class="footer" style="background-color:#f4f4f5; padding: 2em;">
         <div class="row">
             <div class="col-sm-4">
                 <h4 style="color: black; padding-top: 1em;">Parents</h4>
@@ -941,23 +934,23 @@
             <div class="col-md-12">
                  <!-- Facebook -->
                  <a class="fb-ic" href="#">
-                        <i class="fa fa-facebook fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
+                        <i class="fab fa-facebook fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
                       </a>
                       <!-- Twitter -->
                       <a class="tw-ic" href="#">
-                        <i class="fa fa-twitter fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
+                        <i class="fab fa-twitter fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
                       </a>
                       <!-- Google +-->
                       <a class="gplus-ic" href="#">
-                        <i class="fa fa-google-plus fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
+                        <i class="fab fa-google-plus fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
                       </a>
                       <!--Linkedin -->
                       <a class="li-ic" href="#">
-                        <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        <i class="fab fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                       </a>
                       <!--Instagram-->
                       <a class="ins-ic" href="#">
-                        <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                       </a>
             </div>
         </div>
