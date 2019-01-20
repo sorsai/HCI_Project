@@ -297,7 +297,7 @@ success {
     background-color:   #a4dce4;
     content: "";
     display: inline-block;
-    height: 3px;
+    height: 5px;
     position: relative;
     vertical-align: middle;
     width: 50%;
@@ -315,6 +315,23 @@ success {
 
 #navfooter {
   color: white;
+}
+
+.square {
+  position: relative;
+  width: 50%;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 
