@@ -180,9 +180,9 @@ article {
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
+  @media screen and (max-height: 400px) {
     .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
+    .sidebar a {font-size: 10px;}
   }
 
   .slidecontainer {
@@ -193,7 +193,7 @@ article {
   .slider {
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
-    width: 100%; /* Full-width */
+    width: 50%; /* Full-width */
     height: 25px; /* Specified height */
     background: #d3d3d3; /* Grey background */
     outline: none; /* Remove outline */
@@ -211,8 +211,8 @@ article {
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
+    width: 20px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
     background: #4CAF50; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
@@ -302,6 +302,7 @@ success {
     vertical-align: middle;
     width: 50%;
   }
+
   
 #recom h3:before {
     right: 0.5em;
