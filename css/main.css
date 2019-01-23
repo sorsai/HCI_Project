@@ -114,10 +114,10 @@ footer a :hover{
 .aside-right {
   width: 20%;
   padding-top: 15%;
-  padding-right: .5rem;
-  margin-right: .5rem;
+  padding-right: 5px;;
+  margin-right: 5px;;
   float: right;
-  box-shadow: inset 5px 0 -5px 5px #29627e;
+  /* box-shadow: inset 5px 0 -5px 5px #29627e; */
   /* font-style: italic; */
   color: #29627e;
 }
@@ -345,6 +345,13 @@ success {
   height: 100%;
 }
 
-
+.blog-jumb {
+  height:500px;
+  display:flex;
+  align-items:center;
+  background-size:cover;
+  margin:100px 0px;
+  background-image: url('https://motherly-img.rbl.ms/simage/https%3A%2F%2Fassets.rbl.ms%2F17553151%2F980x.jpg/2000%2C2000/K6QY3ng64slWLEC8/img.jpg');
+}
 
 
