@@ -303,7 +303,7 @@ success {
   }
   
  #recom  h3:before,
- #recom h3:after {
+ #recom  h3:after {
     background-color:   #a4dce4;
     content: "";
     display: inline-block;
@@ -312,7 +312,6 @@ success {
     vertical-align: middle;
     width: 50%;
   }
-
   
 #recom h3:before {
     right: 0.5em;
@@ -323,6 +322,34 @@ success {
     left: 0.5em;
     margin-right: -50%;
   }
+
+  #recom2 h3{
+    overflow: hidden;
+    text-align: center;
+  }
+  
+#recom2  h3:before,
+#recom2  h3:after {
+     background-color: #e86c72;
+     content: "";
+     display: inline-block;
+     height: 5px;
+     position: relative;
+     vertical-align: middle;
+     width: 50%;
+   }
+ 
+#recom2 h3:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  
+#recom2  h3:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+  
+ 
 
 #navfooter {
   color: white;
@@ -353,5 +380,55 @@ success {
   margin:100px 0px;
   background-image: url('https://motherly-img.rbl.ms/simage/https%3A%2F%2Fassets.rbl.ms%2F17553151%2F980x.jpg/2000%2C2000/K6QY3ng64slWLEC8/img.jpg');
 }
+div.gallery {
+  border: 1px solid #ccc;
+}
 
+div.gallery:hover {
+  border: 1px solid #777;
+}
 
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
