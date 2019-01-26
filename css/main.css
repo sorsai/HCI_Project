@@ -442,3 +442,59 @@ div.transbox p {
 .font-now {
   font-family: 'Trebuchet MS', Helvetica, sans-serif;
 }
+
+p.less-space {
+  padding:1px;
+}
+
+#poppy {
+  position: relative;
+  width: 200px;
+  left: 15%;
+  border-radius: 50%;
+  height: 185px;
+
+}
+
+div.info1 {
+position: relative;
+width: 200px;
+left: 280px;
+
+}
+
+#poppy1 {
+position: relative;
+width: 200px;
+left:865px;
+border-radius: 50%;
+height: 185px;
+top: -300px;
+
+}
+
+div.info2 {
+position: relative;
+width: 200px;
+left: 870px;
+top: -300px;
+
+}
+
+#poppy2 {
+position: relative;
+width: 200px;
+left:1425px;
+border-radius: 50%;
+height: 185px;
+top: -600px;
+
+}
+
+div.info3 {
+position: relative;
+width: 200px;
+left: 1440px;
+top: -600px;
+
+}
