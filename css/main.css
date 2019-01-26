@@ -182,6 +182,8 @@ article {
   .openbtn:hover {
     background-color: #444;
   }
+
+
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
@@ -349,7 +351,7 @@ success {
     margin-right: -50%;
   }
   
- 
+
 
 #navfooter {
   color: white;
@@ -431,4 +433,12 @@ div.transbox p {
   margin: 5%;
   font-weight: bold;
   color: #000000;
+}
+
+.link a:hover {
+  color: lightseagreen;
+}
+
+.font-now {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
 }
