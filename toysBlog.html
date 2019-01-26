@@ -9,7 +9,7 @@
                 <!-- CSS -->
                 <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
                 <link rel="stylesheet" type="text/css" media="screen" href="css/class_card.css">
-            
+                <link rel="stylesheet" href="css/nouislider.css">
             
                 <!-- BOOTSTRAP -->
                 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -17,10 +17,10 @@
                 <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
                 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:bold" rel="stylesheet">
                 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-                <link href="https://cdn.bootcss.com/noUiSlider/8.5.1/nouislider.min.css" rel="stylesheet">
+                <!-- <link href="https://cdn.bootcss.com/noUiSlider/8.5.1/nouislider.min.css" rel="stylesheet"> -->
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
-
+                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                <link href="https://fonts.googleapis.com/css?family=Playfair+Display:bold" rel="stylesheet">
                 <script src="https://cdn.bootcss.com/noUiSlider/8.5.1/nouislider.js"></script>
                 
                     
@@ -29,16 +29,10 @@
                 <!-- <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script> -->
                 <script type="text/javascript" src="js/bootstrap.min.js"></script>
             </head>
-            <style>
-            .jumbotron-img {
-                background-image: url('http://www.birds.com/wp-content/uploads/home/bird4.jpg');
-                padding-left: 11em;
-                background-size: cover; 
-            };
-            </style>
+           
 
             
-            <body>  
+            <body style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">  
 
             <nav class="container-fluid navbar navbar-expand-sm bg-dark navbar-dark" style="position: fixed;z-index: 999998;">
                 <a class="navbar-brand" href="index.html">STEM PROJECT</a>
@@ -58,16 +52,16 @@
                  </div>
             </nav>
 
-            <aside class="aside-left"  style="padding-top: 100px" >
-                    <div class="sidenav" style="background-color: #f4f4f5; padding: 1em;">
+            <aside class="aside-left"  style="padding-top: 80px" >
+                    <div class="sidenav" style="background-color: #f4f4f5; padding: 1em; font-family: 'Trebuchet MS', Helvetica, sans-serif;">
                                <div class="form-group" >
-                                    <div class="mySearch">
-                                            <h5 style="text-align:center;">Find Interesting Blog</h5>   
+                                    <div class="mySearch" style="font-family: 'Trebuchet MS', Helvetica, sans-serif;">
+                                    <h5 style="text-align:left; font-family: 'Trebuchet MS', Helvetica, sans-serif;">Find Blogs</h5>   
                                             <!-- <label>Enter ZipCode or Location</label> -->
-                                            <div class="form-group has-search">
+                                            <div class="form-group has-search ">
                                                     <span class="fa fa-search form-control-feedback"></span>
                                                     <input type="text" class="form-control" placeholder="Search" id="classSearch">
-                                                    <h6 class="mb-0 small font-weight-small  text-muted ">*enter toy's name, author, date</h6>
+                                                    <h6 class="mb-0 small font-weight-small text-muted" style="font-size: 11.5;">enter toy's name, author, date, tag</h6>
                                             </div> 
                                             <!-- onKeyPress="if(this.value.length==5) return false";      >>   to maximize the entry zipcode -->
                                             <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
@@ -76,30 +70,28 @@
                 <hr>
                     </div>
                      <div class="sidenav" style="background-color: #f4f4f5; ">
-                                    
                                   <label class="p1">Age </label>
-                                  
                                   <div class="selectsearch"  style="color: black">
-                                        <p> <br></p>
-                                        <div id="ageRange"></div>
+                                      <br style="height: 10px;">
+                                        <div id="ageRange" style="font-size: 12px; max-height: 10px;"></div>
                                         <!-- <input id="ex6" type="text" data-slider-min="-5" data-slider-max="20" data-slider-step="1" data-slider-value="3"/>
                                         <span id="ex6CurrentSliderValLabel">Current Slider Value: <span id="ex6SliderVal">3</span></span> -->
                                 </div>						
                             </div>
-                            
-                            <div class="form-group">
+                            <br>
+                            <!-- <div class="form-group">
                                 <label class="price-range">Price (Baht)</label>
                                 <div class="selectsearch"  style="color: black">
                                         <p> <br></p>
-                                        <div data-role="rangeslider">
+                                        <div data-role="rangeslider"> -->
                                                 <!-- <label for="range-1a">Rangeslider:</label>
                                             <input name="range-1a" id="range-1a" min="0" max="100" value="0" type="range" />
                                                 <label for="range-1b">Rangeslider:</label>
                                             <input name="range-1b" id="range-1b" min="0" max="100" value="100" type="range" /> -->
-                                            <div id="priceRange"></div>
+                                            <!-- <div id="priceRange" style="font-size: 12px; max-height: 10px;"></div>
                                         </div>
                                 </div>	
-                            </div>
+                            </div> -->
                             
                             <div>
 
@@ -107,7 +99,7 @@
                             <div>
                             </div>
                             <br>
-                                <label class="p1">Categories</label><br>
+                                <label class="p1">Categories</label>
                                 <div class="selectsearch"  style="color: black">
                                     <input type="checkbox" name="skill1" value="communicate"> Impulse Control<br>
                                     <input type="checkbox" name="skill2" value="creativity"> Emotion Control<br>
@@ -123,11 +115,12 @@
                   
             
                 <!-- </header>  -->
+
     <div class="container-fluid">
    <!-- <center><h1 >STEM TOYS</h1></center> -->
-    <div class="row " style="margin-top: 100px;">
+    <div class="row " style="padding-top:69px; ">
         <a href="bloginfo.html">
-        <div class="jumbotron p-3 p-md-5 text-white" style="border: 1px solid #84a9cd ;background-image:url('https://i.imgur.com/UEW9pN5.jpg'); background-size: cover; opacity: 0.7;padding-left: 15em; margin:15px;" >
+        <div class="jumbotron p-4 p-md-5 text-white" style="border: 1px solid #84a9cd ;background-image:url('https://i.imgur.com/UEW9pN5.jpg'); background-size: cover; opacity: 0.9; margin:15px;" >
         <div class="col-md-6 px-0" style="color: black;  ">
             <h1 class="display-4  font-weight-bold">Inspired kids through 'PLAY'</h1>
             <p class="lead my-3" class="font-weight-bold">It’s that time of the year again when you are actively looking for that one gift that will instantly light up your child’s face.</p>
@@ -137,54 +130,91 @@
         </a>
         </div>
 
-        <div class="row mb-2" style="margin-left: 10px;">
+        <div class="row mb-2" style="padding-left: 15px;" >
             <div class="col-md-6">
             <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <a href="#">       
             <div class="card-body d-flex flex-column align-items-start">
-                <strong class="d-inline-block mb-2 text-primary">Emotion Control</strong>
+                <strong class="d-inline-block mb-2 text-primary">Emotion Control, Working Memory </strong>
                 <h3 class="mb-0">
-                <a class="text-dark" href="#">Featured post</a>
+                <a class="text-dark" href="#">ERECTOR BY MECCANO KITS</a>
                 </h3>
             <div class="mb-1 text-muted">November 1, 2018</div>
                 <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="#">Continue reading</a>
+                <button type="button" class="btn btn-link">Continue reading...</button>
             </div>
-            <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
+        </a>
             </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6" style="padding-left:0;">
             <div class="card flex-md-row mb-4 box-shadow h-md-250">
-            <div class="card-body d-flex flex-column align-items-start">
+            <div class="card-body d-flex flex-column align-items-start" style="background-image:url('https://i.imgur.com/UEW9pN5.jpg'); background-size: cover; opacity: 0.7; ">
                 <strong class="d-inline-block mb-2 text-success">Impulse Control</strong>
                 <h3 class="mb-0">
                 <a class="text-dark" href="#">Post title</a>
                  </h3>
             <div class="mb-1 text-muted">November 11, 2018</div>
                 <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="#">Continue reading</a>
+               <button type="button" class="btn btn-link" style="text-align: left;">Continue reading...</button>
             </div>
-                <img src="" class="card-img-right flex-auto d-none d-md-block" alt="Card image cap" >
             </div>
             </div>
         </div>
         
-            <section class="col-md-9" style="padding: 0 0 0 3em;">
-                    <div class="blog-post">
-                            <h2 class="blog-post-title">Sample blog post</h2>
-                            <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
-                            <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
-                            <hr>
-                            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-                            <blockquote>
-                              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            </blockquote>
-                            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-                    </div>
+                <div class="col-md-9"  id="recom2">   
+                    <h3 class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-1px">Suggested Toys</h3>
+                    <p style="text-align: right"><b>1</b> of <b>12</b></p>
+                                 
+                    <div class="responsive">
+                        <div class="gallery">
+                          <a target="_blank" href="img_5terre.jpg">
+                            <img src="img/2.jpg" alt="Cinque Terre" width="600" height="400">
+                          </a>
+                          <div class="desc">Inspired your son with Toys</div>
+                        </div>
+                      </div>
+                      
+                      
+                      <div class="responsive">
+                        <div class="gallery">
+                          <a target="_blank" href="img_forest.jpg">
+                            <img src="img/9.jpg" alt="Forest" width="600" height="400">
+                          </a>
+                          <div class="desc">Inspired your son with Toys</div>
+                        </div>
+                      </div>
+                      
+                      <div class="responsive">
+                        <div class="gallery">
+                          <a target="_blank" href="img_lights.jpg">
+                            <img src="img/3.jpg" alt="Northern Lights" width="600" height="400">
+                          </a>
+                          <div class="desc">Inspired your son with Toys</div>
+                        </div>
+                      </div>
+                      
+                      <div class="responsive">
+                        <div class="gallery">
+                          <a target="_blank" href="img_mountains.jpg">
+                            <img src="img/2.jpg" alt="Mountains" width="600" height="400">
+                          </a>
+                          <div class="desc">Inspired your son with Toys</div>
+                        </div>
+                      </div>
+                      
+                      <div style="align-content: left ">
+                  
+                         <button type="button" class="btn btn-outline-success Previous"><a href="#">Previous</a></button>
+                         <button type="button" class="btn btn-outline-success nect"><a href="#">Next</a></button>
+                      </div>
+                      <hr style="background-color:#e86c72; height:5px; border:#e86c72;">
+                </div>
+               
                     
-                </section>
+                
 
-            <div class="col-md-3 rounded" style="float: right; padding: 40px; border: 1px solid #fbc0ad70; margin-top: 10px;">
+            <div class="col-md-3 rounded" style="float: right; padding: 40px; border: 1px solid #fbc0ad70; ">
             <h4 class="font-italic">Archives</h4>
             <ol class="list-unstyled mb-0">
               <li><a href="#">March 2019</a></li>
@@ -202,50 +232,11 @@
             </ol>
         </div>
 
-        <div class="col-md-9" style="padding: 10px;" id="recom2">   
-            <h3 class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-1px">Suggested Toys</h3><br>
-            <div class="responsive">
-                <div class="gallery">
-                  <a target="_blank" href="img_5terre.jpg">
-                    <img src="img/2.jpg" alt="Cinque Terre" width="600" height="400">
-                  </a>
-                  <div class="desc">Inspired your son with Toys</div>
-                </div>
-              </div>
-              
-              
-              <div class="responsive">
-                <div class="gallery">
-                  <a target="_blank" href="img_forest.jpg">
-                    <img src="img/9.jpg" alt="Forest" width="600" height="400">
-                  </a>
-                  <div class="desc">Inspired your son with Toys</div>
-                </div>
-              </div>
-              
-              <div class="responsive">
-                <div class="gallery">
-                  <a target="_blank" href="img_lights.jpg">
-                    <img src="img/3.jpg" alt="Northern Lights" width="600" height="400">
-                  </a>
-                  <div class="desc">Inspired your son with Toys</div>
-                </div>
-              </div>
-              
-              <div class="responsive">
-                <div class="gallery">
-                  <a target="_blank" href="img_mountains.jpg">
-                    <img src="img/2.jpg" alt="Mountains" width="600" height="400">
-                  </a>
-                  <div class="desc">Inspired your son with Toys</div>
-                </div>
-              </div>
+         <section class="col-md-9" style="padding: 0 0 0 3em;">
+       
+</section>
         
-              
-              <div class="clearfix"></div>
-              
-  
-        </div>
+    <!-- last -->
 
         <div class="col-md-3 rounded"style="background-color:#cfe7ea;margin-top: 20px; padding:20px;">
                     <h3 class="mb-0 small font-weight-medium text-uppercase mb-1 lts-1px text-center" >Another Blogs</h3><br>
