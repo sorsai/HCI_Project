@@ -47,17 +47,19 @@ ul {
     display: inline;
 }
 section{
-    padding: 3em;
+    padding: 2rem;
     align-content: center;
     
 }
 #video-coach {
-  align-content: center;
-  text-align: center;
+  /* align-content: center; */
+  /* text-align: center; */
+  padding-right:0px;
 }
 
 #advertise-section {
-  padding: 5em;
+  align-content: center;
+  text-align: center;
 }
 
 li main {
@@ -497,4 +499,8 @@ width: 200px;
 left: 1440px;
 top: -600px;
 
+}
+
+red {
+  color:red;
 }
