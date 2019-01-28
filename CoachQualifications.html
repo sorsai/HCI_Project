@@ -6,26 +6,40 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <title>STEM Project-Coach Qualifications</title>
             
-                <!-- CSS -->
-                <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
+ <!-- CSS -->
+ <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+ <link rel="stylesheet" type="text/css" media="screen" href="css/class_card.css">
+ <!-- <link rel="stylesheet" type="text/css" href="css/footer.css"> -->
 
-    <!-- BOOTSTRAP -->
-    <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
-    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:bold" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        
-   
-    <!-- JS -->
-	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+ <!-- BOOTSTRAP -->
+ <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+ <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+ <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+ <link href="https://fonts.googleapis.com/css?family=Playfair+Display:bold" rel="stylesheet">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <link rel="stylesheet" href="css/rangeslider.css">   
+ <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"  media="screen">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+ <link rel="stylesheet" href="css/nouislider.css">
+ <!-- JS -->
+ <script src="js/customs.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.4.2/bootstrap-slider.js"></script>
+ <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+ <script type="text/javascript" src="js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="js/rangeslider.js"></script>
+ <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+ <script src="https://cdn.bootcss.com/noUiSlider/8.5.1/nouislider.js"></script>
             </head>
             
             <body>                    
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="container-fluid navbar navbar-expand-sm bg-dark navbar-dark" style="position: fixed;z-index: 999998; ">
                     <a class="navbar-brand" href="index.html">STEM PROJECT</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -33,13 +47,13 @@
                     <div class="collapse navbar-collapse ml-auto" id="navbarNavAltMarkup">
                         <div class="navbar-nav ml-auto" style="display: inline">
                             <a class="nav-item nav-link" href="findClass.html" style="float: left; padding: 10px 15px 10px 5px">Find a Class</a>
-                            <a class="nav-item nav-link" href="BeCoach3.html" style="float: left; padding: 10px 15px 10px 5px">Be Our Coach</a>
+                            <a class="active nav-item nav-link" href="beCoach3.html" style="float: left; padding: 10px 15px 10px 5px">Be Our Coach</a>
                             <a class="nav-item nav-link" href="toysBlog.html" style="float: left; padding: 10px 15px 10px 5px">Toys and Activities</a>
                             <a class="nav-item nav-link" href="aboutUS.html" style="float: left; padding: 10px 15px 10px 5px">About Us</a>
                             <a class="nav-item nav-link" href="contactUS.html" style="float: left; padding: 10px 15px 10px 5px">Contact Us</a>
-                            <a class="nav-item nav-link" href="index.html" style="float: left; padding: 10px 15px 10px 5px">Home</a>
-                            <button type="button" class="btn btn-outline-info">Register</button>
-                            <button type="button" class="btn btn-outline-success">Login</button>
+                            
+                            <a href="register.html"><button class="btn btn-outline-info">Register</button></a>
+                            <a href="login.html"><button type="button" class="btn btn-outline-success" id="login">Login</button></a>
                         </div>
                     </div>
                 </nav>
@@ -79,16 +93,17 @@
             </a>
           </div>
     </div> -->
+    <header></header>
    <div align="center" style="background-color:rgba(135,206,250,0.7);color:black; ">
-    <h3 style="color: black; padding-top: 1em;">Coach Qualifications</h3>
+    <h3 style="color: black; padding-top: 3em;">Coach Qualifications</h3>
       <p>
        <a href="beCoach3.html" align="center" >Be Our Coach</a>
        <br><br>
       </p>
    </div>
 
-      </div>
-   <div  align="center" class="row" >
+      
+   <div  align="center" class="row font-now" >
         <!--
         <div class="col-sm-4" style="background-color:#5BC0AF;left:0px; top:0px; color:black; border-style: solid; border-width:15px; border-color: lightgrey;">
         -->
@@ -113,7 +128,7 @@
               Must be in original copy<br>
             </p>
             <p>
-            <a href="https://en.wikipedia.org/wiki/Certified_teacher"><button type="button" class="btn btn-outline-success">More info
+            <a href="https://en.wikipedia.org/wiki/Certified_teacher"><button type="button" class="btn btn-success">More info
             </button></a>
             </p>
           </div>
@@ -141,7 +156,7 @@
               It must be authenticated..
             </p>
             <p>
-            <a href="https://en.wikipedia.org/wiki/Diploma"><button type="button"class="btn btn-outline-success" >More info
+            <a href="https://en.wikipedia.org/wiki/Diploma"><button type="button"class="btn btn-success" >More info
             </button></a>
             </p>
           </div>
@@ -169,7 +184,7 @@
                 It must be in original copy.
             </p>
             <p>
-            <a href="https://en.wikipedia.org/wiki/Transcript_(education)"><button type="button"class="btn btn-outline-success" >More info
+            <a href="https://en.wikipedia.org/wiki/Transcript_(education)"><button type="button"class="btn btn-success" >More info
             </button></a>
             </p>            
           </div>
@@ -198,7 +213,7 @@
                Certificates from previous job..
             </p>
             <p>
-            <a href="https://en.wikipedia.org/wiki/Michael_Jackson"><button type="button"class="btn btn-outline-success" >More info
+            <a href="https://en.wikipedia.org/wiki/Michael_Jackson"><button type="button"class="btn btn-success" >More info
             </button></a>
             </p>         
           </div>
@@ -223,11 +238,12 @@
              Must have birth certificate..
             </p>
             <p>
-            <a href="https://en.wikipedia.org/wiki/Paul_McCartney"><button type="button"class="btn btn-outline-success" >More info
+            <a href="https://en.wikipedia.org/wiki/Paul_McCartney"><button type="button"class="btn btn-success" >More info
             </button></a>
             </p>     
           </div>
         </div>
+        
         
         <div class="col-sm-4" align="center" align="center" style="background-image:url('img/777.jpg');background-size: cover;left:0px; top:0px; color:black; border-style: solid; border-width:0px; border-color: lightgrey;">
           <p>
@@ -249,86 +265,87 @@
             Able to speak Chinese is a plus..        
             </p>
             <p>
-            <a href="https://en.wikipedia.org/wiki/Michael_Phelps"><button type="button"class="btn btn-outline-success" >More info
+            <a href="https://en.wikipedia.org/wiki/Michael_Phelps"><button type="button"class="btn btn-success" >More info
             </button></a>
             </p>     
           </div>
         </div>
-    </div>
     
     <div align="center" style="background-color:white;color:black; ">
     <br>
     <br>
-    <p>
-       <a href="resume.html"><button type="button" class="btn btn-outline-success">Adpply Now!</button></a><br><br>
+    <p class="col-sm-8">
+       <a href="resume.html"><button type="button" class="btn btn-success btn-lg btn-block">Apply Now!</button></a><br><br>
        <!--
        <a href="beCoach.html"><button type="button" class="btn btn-outline-info" >More Information</button></a>
        -->
-    </p>
+      </p>
     </div>
-     <!-- Footer -->
-  <footer>
-  <div class="footer" style="background-color:#f4f4f5; padding: 1em;">
-    <div class="row">
-        <div class="col-sm-4">
-            <h5 style="color: black; ">Parents</h5>
-            <ul>
-                <li><a href="findClass.html">Find a class</a></li>
-                <li><a href="#">Birthday Parties/Playdate</a></li>
-                <li><a href="#">Send Gift Cards</a></li>
-                <li><a href="#">DIY Activity</a></li>
-                <li><a href="#">F.A.Q</a></li>
-                <li><a href="#login">Login</a></li>
-                <li><a href="#signUp">Sign Up</a></li>
-            </ul>
-        </div>
-        <div class="col-sm-4">
-            <h5 style="color: black; ">Coach</h5>
-            <ul>
-                <li><a href="#">Our Coach</a></li>
-                <li><a href="#">Become Coach</a></li>
-                <li><a href="#">Nominate Coach</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Sign Up</a></li>
-            </ul>
-        </div>
-        <div class="col-sm-4">
-            <h5 style="color: black; ">Company</h5>
-            <ul>
-                <li><a href="aboutUS.html">About Us</a></li>
-                <li><a href="#">Our Approach</a></li>
-                <li><a href="aboutUS.html">Team</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="contactUS.html">Contact Us</a></li>
-            </ul>
-        </div>
-        <div class="col-md-12">
+    </div>
 
-             <!-- Facebook -->
-             <a class="fb-ic" href="#">
-                    <i class="fa fa-facebook fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
-                  </a>
-                  <!-- Twitter -->
-                  <a class="tw-ic" href="#">
-                    <i class="fa fa-twitter fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
-                  </a>
-                  <!-- Google +-->
-                  <a class="gplus-ic" href="#">
-                    <i class="fa fa-google-plus fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
-                  </a>
-                  <!--Linkedin -->
-                  <a class="li-ic" href="#">
-                    <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                  </a>
-                  <!--Instagram-->
-                  <a class="ins-ic" href="#">
-                    <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                  </a>
-                 </a>
+         
+         <!-- Footer -->
+         <footer>
+            <div class="footer" style="background-color:#f4f4f5; padding: 2em;">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4 style="color: black; padding-top: 1em;">Parents</h4>
+                    <ul>
+                        <li><a href="findClass.html">Find a class</a></li>
+                        <li><a href="#">Birthday Parties/Playdate</a></li>
+                        <li><a href="#">Send Gift Cards</a></li>
+                        <li><a href="#">DIY Activity</a></li>
+                        <li><a href="#">F.A.Q</a></li>
+                        <li><a href="#login">Login</a></li>
+                        <li><a href="#signUp">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h4 style="color: black; padding-top: 1em;">Coach</h4>
+                    <ul>
+                        <li><a href="#">Our Coach</a></li>
+                        <li><a href="#">Become Coach</a></li>
+                        <li><a href="#">Nominate Coach</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h4 style="color: black; padding-top: 1em;">Company</h4>
+                    <ul>
+                        <li><a href="aboutUS.html">About Us</a></li>
+                        <li><a href="#">Our Approach</a></li>
+                        <li><a href="aboutUS.html">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contactUS.html">Contact Us</a></li>
+                    </ul>
+                </div><br><br>
+                            
+                <div class="col-md-12">
+                     <!-- Facebook -->
+                     <a class="fb-ic" href="#">
+                            <i class="fab fa-facebook fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
+                          </a>
+                          <!-- Twitter -->
+                          <a class="tw-ic" href="#">
+                            <i class="fab fa-twitter fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
+                          </a>
+                          <!-- Google +-->
+                          <a class="gplus-ic" href="#">
+                            <i class="fab fa-google-plus fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
+                          </a>
+                          <!--Linkedin -->
+                          <a class="li-ic" href="#">
+                            <i class="fab fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                          </a>
+                          <!--Instagram-->
+                          <a class="ins-ic" href="#">
+                            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                          </a>
+                </div>
+            </div>
         </div>
-    </div>
- </div>
-</footer>
+    </footer>
 </body>
 </html>
